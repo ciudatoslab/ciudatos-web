@@ -24,8 +24,12 @@ Trabajaremos, más que todo, con la carpeta `src` y `public`.
 │   └── styles/
 ```
 
-## 🎨 Diseño web
+## 🎨 Diseño web e identidad organizacional
 - Puedes acceder al diseño web [aquí](https://www.figma.com/file/XTWHTAEaMuHzgp3gDSGvWG/ciudatos?type=design&node-id=0%3A1&mode=design&t=pVIE4PvEJjwI5lRs-1) (El archivo de Figma tiene dos pestañas: moodboard y web. El diseño se encuentra en `web`)
+- Puedes acceder a información sobre el proyecto [aquí](https://docs.google.com/presentation/d/1U-YvVbXL1yq171ZreV41ZZQZWh7ZzTNo97yBEekGKT0/edit?usp=drive_web&ouid=105689299042921048294)
+
+## ⚠️ Advertencia
+- Fíjate en el GitHub si alguien ha hecho comits antes de hacer `git pull`.
 - Cuando estés construyendo los componentes con tailwind, recuerda que debes utilizar las pseudo-clases de con la fuente y los colores del proyecto, que son:
 
 ```text
