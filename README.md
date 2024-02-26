@@ -24,3 +24,17 @@ Trabajaremos, más que todo, con la carpeta `src` y `public`.
 │   └── styles/
 ```
 
+## 🎨 Diseño web
+- Puedes acceder al diseño web [aquí](https://www.figma.com/file/XTWHTAEaMuHzgp3gDSGvWG/ciudatos?type=design&node-id=0%3A1&mode=design&t=pVIE4PvEJjwI5lRs-1) (El archivo de Figma tiene dos pestañas: moodboard y web. El diseño se encuentra en `web`)
+- Cuando estés construyendo los componentes con tailwind, recuerda que debes utilizar las pseudo-clases de con la fuente y los colores del proyecto, que son:
+
+```text
+**Colores**
+'azul-ciudatos'
+'verde-ciudatos'
+'verde-suave-ciudatos'
+'gris'
+
+**Fuente**
+'text-rubik'
+```
