@@ -1,11 +1,18 @@
 ---
 interface Props {
   title: string;
+  outline?: boolean;
 }
 
-const { title } = Astro.props;
+const { title, outline } = Astro.props;
 ---
 
-<button class="w-60 h-16 text-lg text-white bg-azul-ciudatos rounded-lg"
-  >{title}</button
+<button
+  class:list={[
+    "w-60 h-16 text-lg rounded-lg",
+    {
+      "text-white bg-azul-ciudatos": !outline,
+      "text-azul-ciudatos border border-azul-ciudatos": outline,
+    },
+  ]}>{title}</button
 >
