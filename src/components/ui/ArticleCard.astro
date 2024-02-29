@@ -1,0 +1,14 @@
+---
+const {fecha,titulo,imagen}= Astro.props
+---
+
+<div class="h-50 w-full items-center rounded-lg border border-gray-300 border-b-4 shadow-md">
+    <div class="">
+        <img src={imagen} alt="" class="object-cover w-full h-full md:max-h-80 sm:max-h-40">
+    </div>
+    <div class="ml-14 mt-5 mb-10 mr-16">
+        <a class="text-3xl font-medium underline">{titulo}</a>
+
+        <p class="text-gray-700 text-lg font-extralight mt-5">{fecha}</p>
+    </div>
+</div>
