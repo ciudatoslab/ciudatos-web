@@ -1,0 +1,22 @@
+---
+    interface props {
+        title: string,
+        img: string,
+        source:string,
+        description: string,
+        url: string;
+
+    }
+    const {title, img, source, description, url} = Astro.props;
+---
+
+<div class="py-5">
+  <a href={url} class="flex flex-col items-center rounded-lg shadow-lg md:flex-row md:max-w-xl hover:bg-gray-100">
+    <img class="object-cover rounded-t-lg h-full md:w-60 md:rounded-none md:rounded-s-lg" src={img} alt="Map">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h4 class="font-rubik mb-2 text-2xl font-bold tracking-tight text-gray-900">{title}</h4>
+        <p class="font-rubik mb-2 text-sm tracking-tight text-sub-texto" >{source}</p>
+        <p class="font-rubik mb-2 text-base font-medium tracking-tight text-texto">{description}</p>
+    </div>
+  </a>
+</div>

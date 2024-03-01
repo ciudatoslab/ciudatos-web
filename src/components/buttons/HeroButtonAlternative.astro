@@ -1,0 +1,13 @@
+---
+    interface props {
+        title: string,
+        url: string;
+    }
+    const {title, url} = Astro.props;
+---
+
+
+<a class="me-4 font-rubik text-azul-ciudatos hover:text-white border border-azul-ciudatos hover:bg-azul-ciudatos focus:ring-4 focus:outline-none focus:ring-azul-ciudatos font-medium rounded-lg text-lg px-8 py-4 text-center dark:border-azul-ciudatos dark:text-azul-ciudatos dark:hover:text-white dark:hover:bg--azul-ciudatos dark:focus:ring-azul-ciudatos" href={url}>
+    {title}
+    <slot/>
+</a>

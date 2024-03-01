@@ -1,0 +1,64 @@
+---
+import HeroButton from "../components/buttons/HeroButton.astro";
+import HeroButtonAlternative from "../components/buttons/HeroButtonAlternative.astro";
+import CardDataset from "../components/CardDataset.astro";
+---
+
+<div
+  class="px-1 mx-auto max-w-base lg:py-16 lg:px-6 item flex flex-col items-center"
+>
+  <div class="max-w-lg text-center pb-8">
+    <h2
+      class="text-4xl font-bold  font-rubik text-azul-ciudatos decoration-transparent pb-4"
+    >
+      ¿Qué datos estas buscando?
+    </h2>
+    <p class="font-rubik text-texto text-2xl">
+      <strong> Ciudatos Bolivia</strong> es un repositorio colaborativo de <strong
+      >
+        datos abiertos sobre ciudades</strong
+      > en <strong> Bolivia</strong>. Tratamos de explicar problemas urbanos
+      mediante datos e historias.
+    </p>
+    <nav class="pt-14">
+      <HeroButton
+        url="https://www.youtube.com/watch?v=FoFqtnhW9oU"
+        title="Busca Datos"
+      />
+      <HeroButtonAlternative
+        url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGrik7hMZOSkJG80PuVwOX6B17GdrRSMclXJ1aFmSD3A&s"
+        title="Colabora con nosotros"
+      />
+    </nav>
+  </div>
+  <img
+    class="opacity-60"
+    src="/public/img/portada/verde-cb.png"
+    alt="Hero de Ciudatos"
+  />
+</div>
+
+<div class="px-1 mx-auto max-w-base lg:py-16 lg:px-6 item flex flex-col items-center">
+    <CardDataset
+    title="Recorrido del Teleférico en la ciudad de La Paz (2020)"
+    source="GAM La Paz"
+    description="Información espacial de las rutas de recorrido de las líneas del teleferico (Rojo, Verde y Amarillo, Celeste) en La Paz y El Alto."
+    img="/public/img/tarjetas-datos/1.png"
+    url="https://img1.picmix.com/output/pic/normal/8/9/2/2/4642298_46613.gif"
+  />
+  <CardDataset
+  title="Contenedores de basura en Cochabamba (2020)"
+  source="Lab TecnoSocial"
+  description="Información espacial de contenedores de basura en el centro de Cochabamba"
+  img="/public/img/tarjetas-datos/2.png"
+  url="https://img1.picmix.com/output/pic/normal/8/9/2/2/4642298_46613.gif"
+/>
+<CardDataset
+title="Mapa de Zonas de la Ciudad de La Paz (2020)"
+source="GAM La Paz"
+description="El mapa muestra las zonas que conforman la ciudad de Nuestra Señora de La Paz, aproximadamente 188 zonas delimitas de forma referencial."
+img="/public/img/tarjetas-datos/3.png"
+url="https://img1.picmix.com/output/pic/normal/8/9/2/2/4642298_46613.gif"
+/>
+</div>
+

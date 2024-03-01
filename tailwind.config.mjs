@@ -10,7 +10,9 @@ export default {
 				'azul-ciudatos': '#1e237c',
 				'verde-ciudatos': '#65ceB6',
 				'verde-suave-ciudatos': '#C8ECE4',
-				'gris': '#F5F5F5'
+				'gris': '#F5F5F5',
+				'texto':'#585858',
+				'sub-texto': '#909090'
 			}
 		},
 	},
