@@ -1,15 +1,20 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Button from "../../components/ui/Button.astro";
+import ArticleCard from "../../components/ui/ArticleCard.astro";
 ---
 
 <Layout title="Dataset - Template">
   <div class="flex flex-col gap-9">
     <h1 class="text-[40px] text-azul-ciudatos font-bold">
-      Prueba Recorrido del Teleférico en la ciudad de La Paz (2020)
+      Recorrido del Teleférico en la ciudad de La Paz (2020)
     </h1>
     <span class="text-[32px] text-[#4C4C4C]">GAM La Paz</span>
-    <img class="h-[653px] w-auto object-cover" src="/img/tarjetas-datos/1.png" alt="Article image" />
+    <img
+      class="h-[653px] w-auto object-cover"
+      src="/img/tarjetas-datos/1.png"
+      alt="Article image"
+    />
     <p class="text-[28px] text-[#585858]">
       Información espacial de las rutas de recorrido de las líneas del
       teleferico (Rojo, Verde y Amarillo, Celeste) en La Paz y El Alto.
@@ -40,5 +45,18 @@ import Button from "../../components/ui/Button.astro";
         </div>
       </div>
     </section>
+  </div>
+
+  <div class="flex gap-4 mt-8">
+    <ArticleCard
+      fecha="12/12/12"
+      imagen="/img/tarjetas-datos/1.png"
+      titulo="ÑLKJ"
+    />
+    <ArticleCard
+      fecha="12/12/12"
+      imagen="/img/tarjetas-datos/1.png"
+      titulo="ASDF"
+    />
   </div>
 </Layout>
