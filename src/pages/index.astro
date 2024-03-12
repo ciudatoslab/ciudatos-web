@@ -1,8 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import ArticleRow from "../components/ui/ArticleRow.astro";
+import Hero from "../components/Hero.astro";
+import ArticleRow from "../components/cards/home/ArticleRow.astro";
 ---
 
-<Layout title="Ciudatos">
-
+<Layout title="Ciudatos | Inicio">
+  <Hero />
+  <section class="flex flex-col gap-7 sm:gap-[70px] items-center -mt-20 sm:mt-11">
+    <h2 class="text-2xl sm:text-4xl text-azul-ciudatos text-center font-bold">Destacado</h2>
+    <ArticleRow />
+    <a href="#" class="text-lg sm:text-2xl hover:text-azul-ciudatos/50 transition-colors duration-300">Ver más</a>
+  </section>
 </Layout>

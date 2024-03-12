@@ -1,23 +1,37 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Button from "../../components/ui/Button.astro";
-import ArticleCard from "../../components/ui/ArticleCard.astro";
+import Button from "../../components/buttons/Button.astro";
+import { datasets } from "../../data/datasets.js";
+
+// TODO crear el mapeado para los StaticPaths y que sean dinámicos
+export const getStaticPaths = () => {
+  return datasets.map((dataset) => {
+    return {
+      params: { id: dataset.slug },
+      props: { dataset },
+    };
+  });
+};
+
+const { dataset } = Astro.props;
+console.log(dataset);
+const { downloads } = dataset;
+console.log(downloads);
 ---
 
-<Layout title="Dataset - Template">
+<Layout title="Recorrido teleférico La Paz">
   <div class="flex flex-col gap-9">
     <h1 class="text-[40px] text-azul-ciudatos font-bold">
-      Recorrido del Teleférico en la ciudad de La Paz (2020)
+      {dataset.title}
     </h1>
-    <span class="text-[32px] text-[#4C4C4C]">GAM La Paz</span>
+    <span class="text-[32px] text-[#4C4C4C]">{dataset.source}</span>
     <img
       class="h-[653px] w-auto object-cover"
-      src="/img/tarjetas-datos/1.png"
+      src={dataset.img}
       alt="Article image"
     />
     <p class="text-[28px] text-[#585858]">
-      Información espacial de las rutas de recorrido de las líneas del
-      teleferico (Rojo, Verde y Amarillo, Celeste) en La Paz y El Alto.
+      {dataset.description}
     </p>
 
     <section class="flex flex-col gap-4">
@@ -40,23 +54,13 @@ import ArticleCard from "../../components/ui/ArticleCard.astro";
       <div class="flex flex-col items-center gap-4">
         <h3 class="text-2xl text-[#040404] font-bold">Descargas</h3>
         <div class="flex gap-4">
-          <Button title="GitHub" />
-          <Button title="Google Drive" />
+          {
+            downloads.map(
+              (btn) => btn.title && <Button src={btn.src} title={btn.title} />
+            )
+          }
         </div>
       </div>
     </section>
-  </div>
-
-  <div class="flex gap-4 mt-8">
-    <ArticleCard
-      fecha="12/12/12"
-      imagen="/img/tarjetas-datos/1.png"
-      titulo="ÑLKJ"
-    />
-    <ArticleCard
-      fecha="12/12/12"
-      imagen="/img/tarjetas-datos/1.png"
-      titulo="ASDF"
-    />
   </div>
 </Layout>
