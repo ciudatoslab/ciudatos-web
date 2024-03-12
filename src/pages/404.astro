@@ -1,0 +1,22 @@
+---
+import ErrorLayout from "../layouts/ErrorLayout.astro";
+---
+
+<ErrorLayout title="404 No encontrado">
+  <section
+    class="flex flex-col gap-4 items-center justify-center h-[calc(100vh-196px)] sm:h-[calc(100vh-296px)] p-4 sm:p-0"
+  >
+    <h1 class="font-bold text-2xl">Algo sucedió mal...</h1>
+    <p class="text-center">
+      Estamos trabajando para solucionar este problema, ten paciencia por favor.
+    </p>
+    <img
+      src="/img/logos-ciudatos/ciudatos-favicon.png"
+      alt="Logo ciudatos"
+      class="h-20 w-auto animate-pulse"
+    />
+    <a href="/" class="cursor-pointer hover:text-azul-ciudatos">
+      Regresar al inicio
+    </a>
+  </section>
+</ErrorLayout>
