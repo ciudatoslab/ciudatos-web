@@ -1,23 +1,13 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { datasets } from "../../data/datasets";
+import Buscador from "../datos/Buscador.jsx";
+
 ---
 
 <Layout title="Ciudatos | datos">
   <h1 class="mb-8">Datos</h1>
   <ul class="space-y-4">
-    {
-      datasets.map((link) => (
-        <li class="px-4">
-          <a
-            target="_blank"
-            href={`/datos/${link.slug}`}
-            class="cursor-pointer hover:text-azul-ciudatos hover:underline"
-          >
-            {link.title}
-          </a>
-        </li>
-      ))
-    }
+    <Buscador client:only/>
+
   </ul>
 </Layout>
