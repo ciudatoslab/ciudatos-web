@@ -1,0 +1,95 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Button from "../../components/buttons/Button.astro";
+import { datasets } from "../../data/datasets.js";
+import DownloadItem from "../../components/dataset/DownloadItem.astro";
+
+// TODO crear el mapeado para los StaticPaths y que sean dinámicos
+export const getStaticPaths = () => {
+  const datasetsWithSlug = datasets.filter((dataset) => dataset.slug !== "");
+
+  return datasetsWithSlug.map((dataset) => {
+    return {
+      params: { slug: dataset.slug },
+      props: { dataset },
+    };
+  });
+};
+
+const { dataset } = Astro.props;
+console.log(dataset);
+
+const files = Object.keys(dataset)
+  .filter((key) => {
+    return (
+      key === "csv" ||
+      key === "excel" ||
+      key === "sav" ||
+      key === "geojson" ||
+      key === "shp" ||
+      key === "gpkg"
+    );
+  })
+  .filter((key) => dataset[key] !== "");
+
+console.log(files);
+---
+
+<Layout title={dataset.nombre}>
+  <div class="flex flex-col gap-5 sm:gap-9 px-4 sm:px-0">
+    <h1 class="text-3xl sm:text-[40px] text-azul-ciudatos font-bold">
+      {dataset.nombre}
+    </h1>
+    <span class="text-xl sm:text-[32px] text-[#4C4C4C]">{dataset.autor}</span>
+    <img
+      class="h-64 sm:h-[653px] w-auto object-cover"
+      src={`/img/tarjetas-datos/${dataset.img}`}
+      alt="Article image"
+    />
+    <p class="text-lg sm:text-[28px] text-[#585858]">
+      {dataset.descripcion}
+    </p>
+
+    <section class="flex flex-col gap-4">
+      <h2 class="text-xl sm:text-[32px] text-[#040404] font-bold">
+        Recursos del dataset
+      </h2>
+      <hr />
+      <ul class="flex flex-col gap-4 items-center mx-auto">
+        {
+          files.map((file) => (
+            // <li class="flex items-center justify-center gap-4 w-full group">
+            //   <a
+            //     href={dataset.url_drive}
+            //     target="_blank"
+            //     class="flex gap-4 items-center justify-start w-full"
+            //   >
+            //     <div class="flex items-center justify-center w-12 h-16 sm:w-[95px] sm:h-[111px] bg-gris">
+            //       <span class="text-sm sm:text-base group-hover:scale-110 transition-transform">
+            //         {file}
+            //       </span>
+            //     </div>
+            //     <p class="text-lg sm:text-[25px] text-[#040404] group">
+            //       Descarga el archivo
+            //       <span class="group-hover:text-azul-ciudatos transition-colors">
+            //         "{file}"
+            //       </span>
+            //     </p>
+            //   </a>
+            // </li>
+            <DownloadItem url={dataset.url_drive} fileType={file}/>
+          ))
+        }
+      </ul>
+      <!-- <div class="flex flex-col items-start gap-4 sm:items-center">
+        <h3 class="text-xl sm:text-2xl text-[#040404] font-bold">Descargas</h3>
+        <div
+          class="flex flex-col w-full items-center gap-4 sm:flex-row sm:justify-center"
+        >
+          <Button src={dataset.url_github} title="Github" />
+          <Button src={dataset.url_drive} title="Google Drive" />
+        </div>
+      </div> -->
+    </section>
+  </div>
+</Layout>

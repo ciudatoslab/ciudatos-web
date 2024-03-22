@@ -10,10 +10,11 @@ const { title, src, outline } = Astro.props;
 
 <button
   class:list={[
-    "w-36 h-11 sm:w-60 sm:h-16 text-xs sm:text-lg rounded-md sm:rounded-lg transition-colors",
+    "w-48 h-11 sm:w-60 sm:h-16 text-md sm:text-lg rounded-md sm:rounded-lg transition-colors",
     {
       "text-white bg-azul-ciudatos hover:bg-azul-ciudatos/90": !outline,
-      "text-azul-ciudatos bg-white/80 sm:bg-white border border-azul-ciudatos hover:bg-azul-ciudatos/5 hover:border-azul-ciudatos/50": outline,
+      "text-azul-ciudatos bg-white/80 sm:bg-white border border-azul-ciudatos hover:bg-azul-ciudatos/5 hover:border-azul-ciudatos/50":
+        outline,
     },
   ]}
 >
