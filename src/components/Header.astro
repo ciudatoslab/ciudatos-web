@@ -13,12 +13,12 @@
   <!--Modal -->
   <div
     id="modal"
-    class="fixed inset-x-0 top-10 z-50 hidden md:hidden overflow-y-auto bg-white p-8 transition-transform duration-300 transform -translate-y-full  border border-gray-300"
+    class="fixed inset-x-0 top-20 z-auto hidden md:hidden overflow-y-auto bg-white transform translate-y-full animate-fade-down animate-duration-500"
   >
     <div class="bg-white rounded-lg">
-      <nav>
-        <ul class="flex flex-col text-xl border border-grey-300 rounded">
-          <li >
+      <nav class="ml-5">
+        <ul class="flex flex-col text-xl items-center">
+          <li>
             <a href="/datos" class="mb-4 text-black font-normal mr-4 md:mr-8"
               >Datos</a
             >
@@ -29,7 +29,7 @@
             >
           </li>
           <li>
-            <div class="flex flex-row items-center mt-2">
+            <div class="flex flex-row items-center mt-2 mb-5">
               <a
                 href="https://github.com/ciudatos-bolivia/"
                 target="_blank"
@@ -77,8 +77,8 @@
   <!--Navbar normal -->
   <div class="hidden md:block">
     <nav class="flex">
-      <a href="/datos" class="text-black font-normal mr-4 md:mr-8">Datos</a>
-      <a href="/blogs" class="text-black font-normal mr-4 md:mr-8">Blog</a>
+      <a href="/datos" class="text-black font-normal mr-4 md:mr-8 hover:font-bold">Datos</a>
+      <a href="/blogs" class="text-black font-normal mr-4 md:mr-8 hover:font-bold">Blog</a>
       <a
         href="https://github.com/ciudatos-bolivia/"
         target="_blank"
@@ -91,12 +91,21 @@
 
   <!--Script para mostrar/quitar el modal -->
   <script>
+
     const openModalButton = document.getElementById("openModal");
     const modal = document.getElementById("modal");
+    const header = document.getElementById("header");
 
     openModalButton.addEventListener("click", () => {
       modal.classList.toggle("hidden");
-      modal.classList.toggle("-translate-y-full");
     });
+
+    //Si el usuario hace scroll el menu de hamburguesa se cierra
+    window.addEventListener("scroll", () => {
+      if (!modal.classList.contains("hidden")) {
+        modal.classList.add("hidden");
+      }
+    });
+    
   </script>
 </header>
