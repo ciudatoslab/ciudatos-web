@@ -24,8 +24,8 @@ const Buscador = () => {
   const results = !search
     ? users
     : users.filter((dato) =>
-        dato.nombre.toLowerCase().includes(search.toLowerCase())
-      );
+      dato.nombre.toLowerCase().includes(search.toLowerCase())
+    );
 
   // Filtrar resultados por tema seleccionado
   const filteredResults = selectedTheme
@@ -37,13 +37,13 @@ const Buscador = () => {
   }, []);
 
   return (
-    <div class="main-container flex flex-col md:flex-row">
+    <div className="main-container flex flex-col md:flex-row">
       <AsideDatos
-        class=""
+        className=""
         selectedTheme={selectedTheme}
         filterByTheme={filterByTheme}
       />
-      <div class="w-full md:w-2/3">
+      <div className="w-full md:w-2/3">
         <div className="buscador max-w-md mx-auto mt-10">
           <label
             htmlFor="default-search"
@@ -73,10 +73,9 @@ const Buscador = () => {
               value={search}
               onChange={searcher}
               placeholder="Buscar datos"
-              className="form-control"
+              className="form-control block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
               type="search"
               id="default-search"
-              class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
               required
             />
           </div>
@@ -84,14 +83,15 @@ const Buscador = () => {
 
         {/* Mostrar resultados filtrados */}
         {filteredResults.map((user) => (
-          <div className="flex flex-col items-center " key={user.id}>
+          <div className="flex flex-col items-center animate-fade" key={user.id}>
             <a
-              href={user.old_url}
+              href={`/datos/${user.slug}`}
               className="flex flex-col my-2 items-center rounded-lg shadow-lg md:flex-row md:max-w-xl hover:bg-gray-100"
+              target="_blank"
             >
               <img
                 className="object-cover rounded-t-lg h-full md:w-60 md:rounded-none md:rounded-s-lg"
-                src={"/img/tarjetas-datos/" + user.img}
+                src={`/img/tarjetas-datos/${user.img}`}
                 alt=""
               />
               <div className="flex flex-col justify-between p-4 leading-normal">
