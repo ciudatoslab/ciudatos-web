@@ -9,6 +9,7 @@ const { title, src, outline } = Astro.props;
 ---
 
 <button
+  onclick={src}
   class:list={[
     "w-48 h-11 sm:w-60 sm:h-16 text-md sm:text-lg rounded-md sm:rounded-lg transition-colors",
     {
