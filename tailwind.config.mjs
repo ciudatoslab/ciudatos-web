@@ -4,7 +4,8 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				'rubik': ['Rubik', 'sans-serif']
+				'rubik': ['Rubik', 'sans-serif'],
+				'raleway': ['Raleway', 'sans-serif']
 			},
 			colors: {
 				'azul-ciudatos': '#1e237c',
