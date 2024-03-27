@@ -4,15 +4,14 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				'rubik': ['Rubik', 'sans-serif'],
-				'raleway': ['Raleway', 'sans-serif']
+				'rubik': ['Rubik', 'sans-serif']
 			},
 			colors: {
 				'azul-ciudatos': '#1e237c',
 				'verde-ciudatos': '#65ceB6',
 				'verde-suave-ciudatos': '#C8ECE4',
 				'gris': '#F5F5F5',
-				'texto':'#585858',
+				'texto': '#585858',
 				'sub-texto': '#909090'
 			}
 		},

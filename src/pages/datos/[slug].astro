@@ -1,8 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Button from "../../components/buttons/Button.astro";
 import { datasets } from "../../data/datasets.js";
-import DownloadItem from "../../components/dataset/DownloadItem.astro";
+import FileType from "../../components/dataset/FileType.astro";
 
 // TODO crear el mapeado para los StaticPaths y que sean dinámicos
 export const getStaticPaths = () => {
@@ -17,7 +16,6 @@ export const getStaticPaths = () => {
 };
 
 const { dataset } = Astro.props;
-console.log(dataset);
 
 const files = Object.keys(dataset)
   .filter((key) => {
@@ -31,14 +29,13 @@ const files = Object.keys(dataset)
     );
   })
   .filter((key) => dataset[key] !== "");
-
-console.log(files);
 ---
 
 <Layout title={dataset.nombre}>
   <div class="flex flex-col gap-5 sm:gap-9 px-4 sm:px-0">
     <h1 class="text-3xl sm:text-[40px] text-azul-ciudatos font-bold">
       {dataset.nombre}
+      <span>({dataset.año})</span>
     </h1>
     <span class="text-xl sm:text-[32px] text-[#4C4C4C]">{dataset.autor}</span>
     <img
@@ -50,44 +47,51 @@ console.log(files);
       {dataset.descripcion}
     </p>
 
-    <section class="flex flex-col gap-4">
-      <h2 class="text-xl sm:text-[32px] text-[#040404] font-bold">
-        Recursos del dataset
-      </h2>
-      <hr />
-      <ul class="flex flex-col gap-4 items-center mx-auto">
+    <section class="flex flex-col gap-10">
+      <div class="flex flex-col gap-4">
+        <h2 class="text-xl sm:text-[32px] text-[#040404] font-bold">
+          Recursos del dataset
+        </h2>
+        <hr />
+      </div>
+      <ul class="flex flex-col gap-10 items-center mx-auto">
         {
           files.map((file) => (
-            // <li class="flex items-center justify-center gap-4 w-full group">
-            //   <a
-            //     href={dataset.url_drive}
-            //     target="_blank"
-            //     class="flex gap-4 items-center justify-start w-full"
-            //   >
-            //     <div class="flex items-center justify-center w-12 h-16 sm:w-[95px] sm:h-[111px] bg-gris">
-            //       <span class="text-sm sm:text-base group-hover:scale-110 transition-transform">
-            //         {file}
-            //       </span>
-            //     </div>
-            //     <p class="text-lg sm:text-[25px] text-[#040404] group">
-            //       Descarga el archivo
-            //       <span class="group-hover:text-azul-ciudatos transition-colors">
-            //         "{file}"
-            //       </span>
-            //     </p>
-            //   </a>
-            // </li>
-            <DownloadItem url={dataset.url_drive} fileType={file}/>
+            <FileType fileType={file} text={dataset.nombre} />
           ))
         }
       </ul>
-      <div class="flex flex-col items-start gap-4 sm:items-center">
+      <div class="flex flex-col items-start gap-8 sm:items-center">
         <h3 class="text-xl sm:text-2xl text-[#040404] font-bold">Descargas</h3>
         <div
           class="flex flex-col w-full items-center gap-4 sm:flex-row sm:justify-center"
         >
-          <Button src={dataset.url_github} title="Github" />
-          <Button src={dataset.url_drive} title="Google Drive" />
+          <a
+            href={dataset.url_github}
+            class:list={[
+              "flex items-center justify-center w-48 h-11 sm:w-60 sm:h-16 text-md sm:text-lg rounded-md sm:rounded-lg transition-colors",
+              {
+                "text-white bg-azul-ciudatos hover:bg-azul-ciudatos/90": true,
+                "text-azul-ciudatos bg-white/80 sm:bg-white border border-azul-ciudatos hover:bg-azul-ciudatos/5 hover:border-azul-ciudatos/50": false,
+              },
+            ]}
+            target="_blank"
+          >
+            Github
+          </a>
+          <a
+            href={dataset.url_github}
+            class:list={[
+              "flex items-center justify-center w-48 h-11 sm:w-60 sm:h-16 text-md sm:text-lg rounded-md sm:rounded-lg transition-colors",
+              {
+                "text-white bg-azul-ciudatos hover:bg-azul-ciudatos/90": true,
+                "text-azul-ciudatos bg-white/80 sm:bg-white border border-azul-ciudatos hover:bg-azul-ciudatos/5 hover:border-azul-ciudatos/50": false,
+              },
+            ]}
+            target="_blank"
+          >
+            Google Drive
+          </a>
         </div>
       </div>
     </section>
