@@ -1,0 +1,42 @@
+---
+const { fileType, text } = Astro.props;
+
+interface Props {
+  fileType: string;
+  text: string;
+}
+
+interface FileTypeMap {
+  [key: string]: string;
+}
+
+const fileTypeTextMap: FileTypeMap = {
+  img: "Imagen",
+  csv: "CSV",
+  excel: "XLSX",
+  sav: "SAV",
+  geojson: "GeoJson",
+  shp: "Shape",
+  gpkg: "GPKG",
+};
+
+const fileTypeText = fileTypeTextMap[fileType.toLowerCase()] || "Desconocido";
+---
+
+<li class="flex items-center justify-center gap-4 w-full">
+  <div class="flex gap-4 items-center justify-start w-full">
+    <div class="flex items-center justify-center w-auto h-auto">
+      <img
+        src={`/img/format-icons/${fileType}.svg`}
+        class="min-w-16 min-h-20 sm:min-w-20 sm:min-h-24"
+        alt={`Icono de ${fileType}`}
+      />
+    </div>
+    <p class="text-lg sm:text-[25px] text-[#040404]">
+      {text}
+      <span class="capitalize">
+        ({fileTypeText})
+      </span>
+    </p>
+  </div>
+</li>
