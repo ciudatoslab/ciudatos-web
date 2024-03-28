@@ -24,8 +24,8 @@ const Buscador = () => {
   const results = !search
     ? users
     : users.filter((dato) =>
-      dato.nombre.toLowerCase().includes(search.toLowerCase())
-    );
+        dato.nombre.toLowerCase().includes(search.toLowerCase())
+      );
 
   // Filtrar resultados por tema seleccionado
   const filteredResults = selectedTheme
@@ -80,35 +80,41 @@ const Buscador = () => {
             />
           </div>
         </div>
-
-        {/* Mostrar resultados filtrados */}
-        {filteredResults.map((user) => (
-          <div className="flex flex-col items-center animate-fade" key={user.id}>
+        <div className="flex flex-col items-center">
+          {/* Mostrar resultados filtrados */}
+          {filteredResults.map((user) => (
             <a
               href={`/datos/${user.slug}`}
-              className="flex flex-col my-2 items-center rounded-lg shadow-lg md:flex-row md:max-w-xl hover:bg-gray-100"
+              className="flex flex-col h-300 my-5 items-center rounded-lg shadow-lg md:flex-row md:min-w-xl hover:bg-gray-100 animate-fade"
               target="_blank"
+              key={user.id}
             >
               <img
-                className="object-cover rounded-t-lg h-full md:w-60 md:rounded-none md:rounded-s-lg"
+                className="object-cover md:w-1/3 rounded-t-lg md:rounded-none md:rounded-s-lg w-full"
                 src={`/img/tarjetas-datos/${user.img}`}
                 alt=""
               />
-              <div className="flex flex-col justify-between p-4 leading-normal">
-                <h4 className="font-rubik mb-2 text-2xl font-bold tracking-tight text-gray-900">
+
+              <div className="flex flex-col p-4 md:w-2/3">
+                <h4 className="font-rubik mb-2 text-xl font-semibold tracking-tight text-gray-900">
                   {user.nombre}
                 </h4>
                 <p className="font-rubik mb-2 text-sm tracking-tight text-sub-texto">
                   {user.autor}
                 </p>
-                <p className="font-rubik mb-2 text-base font-medium tracking-tight text-texto">
+                <p className="font-rubik mb-2 text-sm line-clamp-2 overflow-ellipsis font-light tracking-tight text-texto sm:max-w-xs sm:line-clamp-2 md:max-w-md">
                   {user.descripcion}
                 </p>
-                <p className="font-rubik text-red-400">{user.tema}</p>
+
+                <div className="flex flex-col items-center ">
+                <p className="font-rubik border font-thin text-xs border-azul-ciudatos text-azul-ciudatos rounded-full py-1 px-2 mt-5">
+                  {user.tema}
+                </p>
+                </div>
               </div>
             </a>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
