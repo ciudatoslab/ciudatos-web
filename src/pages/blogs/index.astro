@@ -4,9 +4,11 @@ import ArticleRow from "../../components/cards/home/ArticleRow.astro";
 
 ---
 <Layout title="blog">
-    <section class="flex flex-col gap-7 sm:gap-[70px] items-center -mt-20 sm:mt-11">
-        <h2 class="text-2xl sm:text-4xl text-azul-ciudatos text-center font-bold">Blog</h2>
+  <section class="flex flex-col items-center sm:spx-1 mx-auto lg:px-6">
+    <div class="flex flex-col gap-8 items-center text-center">
+      <h2 class="text-2xl sm:text-4xl font-bold text-azul-ciudatos decoration-transparent">Blog</h2>
         <ArticleRow />
-        <a href="#" class="text-lg sm:text-2xl hover:text-azul-ciudatos/50 transition-colors duration-300">Ver más</a>
-      </section>
+      <a href="#" class="text-lg sm:text-2xl hover:text-azul-ciudatos/50 transition-colors duration-300">Ver más</a>
+    </div>
+  </section>
 </Layout>
