@@ -3,9 +3,10 @@ interface Props {
   title: string;
   src: string;
   outline?: boolean;
+  className?: string;
 }
 
-const { title, src, outline } = Astro.props;
+const { title, src, outline, className  } = Astro.props;
 ---
 
 <button
@@ -17,6 +18,8 @@ const { title, src, outline } = Astro.props;
       "text-azul-ciudatos bg-white/80 sm:bg-white border border-azul-ciudatos hover:bg-azul-ciudatos/5 hover:border-azul-ciudatos/50":
         outline,
     },
+    className,
+    "fade-in",
   ]}
 >
   {title}
