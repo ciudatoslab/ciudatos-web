@@ -52,7 +52,17 @@ const Buscador = () => {
             Buscar datos
           </label>
           <div className="relative">
-            <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+
+          <input
+              value={search}
+              onChange={searcher}
+              placeholder="Buscar datos"
+              className="form-control block w-full p-4 ps-10 text-sm text-gray-900 border-b border-gray-300 focus:outline-none"
+              type="search"
+              id="default-search"
+              required
+            />
+            <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
               <svg
                 className="w-4 h-4 text-gray-500 dark:text-gray-400"
                 aria-hidden="true"
@@ -69,15 +79,7 @@ const Buscador = () => {
                 />
               </svg>
             </div>
-            <input
-              value={search}
-              onChange={searcher}
-              placeholder="Buscar datos"
-              className="form-control block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
-              type="search"
-              id="default-search"
-              required
-            />
+            
           </div>
         </div>
         <div className="flex flex-col items-center">
