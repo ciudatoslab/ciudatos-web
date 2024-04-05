@@ -1,5 +1,7 @@
 ---
 import Button from "./buttons/Button.astro";
+import verdeCb from "../assets/img/portada/verde-cb.png";
+import { Image } from "astro:assets";
 ---
 
 <style>
@@ -10,7 +12,7 @@ import Button from "./buttons/Button.astro";
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
   }
-  
+
   @keyframes fade-in-animation {
     0% {
       opacity: 0;
@@ -20,50 +22,61 @@ import Button from "./buttons/Button.astro";
     }
   }
 </style>
-    
-  <div class="flex flex-col items-center sm:spx-1 mx-auto lg:px-6">
-    <div class="flex flex-col gap-8 items-center text-center">
-      <h2 class="text-3xl sm:text-4xl font-bold text-azul-ciudatos fade-in"> 
-        ¿Qué datos estás buscando?
-      </h2>
-      <div class="flex flex-col items-center max-w-64 sm:max-w-[540px] text-texto sm:text-2xl text-pretty font-raleway fade-in">
-        <p class="fade-in">
-          <strong> Ciudatos Bolivia</strong> es un repositorio colaborativo de <strong>datos abiertos sobre ciudades</strong> en <strong> Bolivia</strong>. Tratamos de explicar problemas urbanos mediante <strong>datos e historias.</strong> 
-        </p>
-      </div>
-      <div class="flex flex-col gap-8 sm:flex-row sm:gap-12 fade-in">
-        <Button
-          src="window.location.href='/datos';"
-          title="Busca Datos"
-          className="fade-in"
-        />
-        <Button
-          outline
-          src="window.location.href='mailto:ciudatos.bolivia@gmail.com?subject=Intenci%C3%B3n%20de%20colaboraci%C3%B3n%20con%20datasets%20con%20Ciudatos%20Bolivia';"
-          title="Colabora con nosotros"
-          className="fade-in"
-        />
-      </div>
-    </div>
-    <img
-      class="h-[580px] w-auto object-cover -translate-y-28 sm:-translate-y-11 -z-10 opacity-60 mix-blend-lighten"
-      src="/img/portada/verde-cb.png"
-      alt="Hero de Ciudatos"
-    />
-  </div>
 
-  <script>
-    export function useEffect(fn) {
-      setTimeout(fn, 0);
-    }
-  
-    export function afterUpdate() {
-      const elements = document.querySelectorAll('.fade-in');
-      elements.forEach((element: HTMLElement) => {
-        element.style.animationDelay = '0.2s';
-      });
-    }
-  </script>
+<div class="flex flex-col items-center sm:spx-1 mx-auto lg:px-6">
+  <div class="flex flex-col gap-8 items-center text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold text-azul-ciudatos fade-in">
+      ¿Qué datos estás buscando?
+    </h2>
+    <div
+      class="flex flex-col items-center max-w-64 sm:max-w-[540px] text-texto sm:text-2xl text-pretty font-raleway fade-in"
+    >
+      <p class="fade-in">
+        <strong> Ciudatos Bolivia</strong> es un repositorio colaborativo de <strong
+          >datos abiertos sobre ciudades</strong
+        > en <strong> Bolivia</strong>. Tratamos de explicar problemas urbanos
+        mediante <strong>datos e historias.</strong>
+      </p>
+    </div>
+    <div class="flex flex-col gap-8 sm:flex-row sm:gap-12 fade-in">
+      <Button
+        src="window.location.href='/datos';"
+        title="Busca Datos"
+        className="fade-in"
+      />
+      <Button
+        outline
+        src="window.location.href='mailto:ciudatos.bolivia@gmail.com?subject=Intenci%C3%B3n%20de%20colaboraci%C3%B3n%20con%20datasets%20con%20Ciudatos%20Bolivia';"
+        title="Colabora con nosotros"
+        className="fade-in"
+      />
+    </div>
+  </div>
+  <!-- <img
+    class="h-[580px] w-auto object-cover -translate-y-28 sm:-translate-y-11 -z-10 opacity-60 mix-blend-lighten"
+    src="/img/portada/verde-cb.png"
+    alt="Hero de Ciudatos"
+  /> -->
+  <Image
+    class="h-[580px] w-auto object-cover -translate-y-28 sm:-translate-y-11 -z-10 opacity-60 mix-blend-lighten"
+    src={verdeCb}
+    alt="Imagen portada"
+    quality="mid"
+  />
+</div>
+
+<script>
+  export function useEffect(fn) {
+    setTimeout(fn, 0);
+  }
+
+  export function afterUpdate() {
+    const elements = document.querySelectorAll(".fade-in");
+    elements.forEach((element: HTMLElement) => {
+      element.style.animationDelay = "0.2s";
+    });
+  }
+</script>
 
 <!-- <div
   class="px-1 mx-auto max-w-base lg:py-16 lg:px-6 item flex flex-col items-center"
