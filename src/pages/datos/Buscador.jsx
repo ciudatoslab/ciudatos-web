@@ -8,7 +8,6 @@ const Buscador = () => {
   const [selectedTheme, setSelectedTheme] = useState(""); // Nuevo estado para el tema seleccionado
 
   const showdatasets = () => {
-    console.log(datasets);
     setUsers(datasets);
   };
 
@@ -88,13 +87,12 @@ const Buscador = () => {
             <a
               href={`/datos/${user.slug}`}
               className="flex flex-col h-300 my-5 mx-4 items-center rounded-lg shadow-lg sm:flex-row sm:min-w-xl sm:mx-0 hover:bg-gray-100 animate-fade"
-              target="_blank"
               key={user.id}
             >
               <img
                 className="object-cover sm:w-1/3 rounded-t-lg sm:rounded-none sm:rounded-s-lg w-full"
                 src={`/img/tarjetas-datos/${user.img}`}
-                alt=""
+                alt={user.nombre}
               />
 
               <div className="flex flex-col p-4 sm:w-2/3">
