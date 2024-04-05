@@ -14,7 +14,7 @@ const AsideDatos = ({ selectedTheme, filterByTheme }) => {
   }
 
   return (
-    <aside className="w-full md:w-1/3 bg-gray-200 pl-4 pt-4 mr-8">
+    <aside className="w-full lg:w-1/3 bg-gray-200 pl-4 py-4 mr-8">
       <h3 className="font-rubik text-lg font-bold mb-2">Temas</h3>
       <hr className="border-gray-400 flex-grow mr-4" />
 
@@ -24,7 +24,7 @@ const AsideDatos = ({ selectedTheme, filterByTheme }) => {
           tags.map(tag => (
             <li key={tag.id} className='select-none'>
               <div
-                className={`text-start bg-gray-200 rounded-full px-3 py-1 mx-3 my-1 focus:outline-none ${selectedTheme === tag.tag ? 'bg-blue-500 text-white' : 'text-gray-700'} cursor-pointer transition-all duration-150`}
+                className={`text-start bg-gray-200 rounded-full px-3 py-1 mx-3 my-1 focus:outline-none ${selectedTheme === tag.tag ? 'bg-blue-500 font-medium' : 'text-gray-700'} cursor-pointer transition-all duration-150`}
                 onClick={() => handleTag(tag.tag)}
               >
                 {tag.tag}

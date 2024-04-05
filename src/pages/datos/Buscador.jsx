@@ -37,13 +37,13 @@ const Buscador = () => {
   }, []);
 
   return (
-    <div className="main-container flex flex-col md:flex-row">
+    <div className="main-container flex flex-col lg:flex-row">
       <AsideDatos
         className=""
         selectedTheme={selectedTheme}
         filterByTheme={filterByTheme}
       />
-      <div className="w-full md:w-2/3">
+      <div className="w-full lg:w-2/3">
         <div className="buscador max-w-md mx-auto mt-10">
           <label
             htmlFor="default-search"
@@ -56,7 +56,7 @@ const Buscador = () => {
           <input
               value={search}
               onChange={searcher}
-              placeholder="Buscar datos"
+              placeholder="¿Qué datos estás buscando?"
               className="form-control block w-full p-4 ps-10 text-sm text-gray-900 border-b border-gray-300 focus:outline-none"
               type="search"
               id="default-search"
@@ -87,24 +87,24 @@ const Buscador = () => {
           {filteredResults.map((user) => (
             <a
               href={`/datos/${user.slug}`}
-              className="flex flex-col h-300 my-5 items-center rounded-lg shadow-lg md:flex-row md:min-w-xl hover:bg-gray-100 animate-fade"
+              className="flex flex-col h-300 my-5 mx-4 items-center rounded-lg shadow-lg sm:flex-row sm:min-w-xl sm:mx-0 hover:bg-gray-100 animate-fade"
               target="_blank"
               key={user.id}
             >
               <img
-                className="object-cover md:w-1/3 rounded-t-lg md:rounded-none md:rounded-s-lg w-full"
+                className="object-cover sm:w-1/3 rounded-t-lg sm:rounded-none sm:rounded-s-lg w-full"
                 src={`/img/tarjetas-datos/${user.img}`}
                 alt=""
               />
 
-              <div className="flex flex-col p-4 md:w-2/3">
+              <div className="flex flex-col p-4 sm:w-2/3">
                 <h4 className="font-rubik mb-2 text-xl font-semibold tracking-tight text-gray-900">
                   {user.nombre}
                 </h4>
                 <p className="font-rubik mb-2 text-sm tracking-tight text-sub-texto">
                   {user.autor}
                 </p>
-                <p className="font-rubik mb-2 text-sm line-clamp-2 overflow-ellipsis font-light tracking-tight text-texto sm:max-w-xs sm:line-clamp-2 md:max-w-md">
+                <p className="font-rubik mb-2 text-sm line-clamp-2 overflow-ellipsis font-light tracking-tight text-texto sm:max-w-xs sm:line-clamp-2 sm:max-w-md">
                   {user.descripcion}
                 </p>
 
