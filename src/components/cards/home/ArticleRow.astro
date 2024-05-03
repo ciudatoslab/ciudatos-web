@@ -1,23 +1,26 @@
 ---
 import ArticleCard from "./ArticleCard.astro";
+import { articles } from "/home/anze7w7/Lab/ciudatos-web/src/data/blog.js";
+
+const maxArticles = {
+  view1: articles.length, // Display all articles 
+  view2: 2, // Display only 2 articles
+};
+
+const view = Astro.props.view || "view1"; // Get the current view from props
+
 ---
 
 <div class="grid lg:grid-cols-2 gap-14">
-  <ArticleCard
-    titulo="Cómo Bolivia se convirtió en un país urbano y desigual"
-    fecha="6/11/2023"
-    descripcion="Hoy en día, el 75% de los bolivianos viven en ciudades, por lo cual hacer de ellas un lugar más equitativo debería ser una política prioritaria para las autoridades en todos los niveles de gobierno. ¿Pero realmente se están tomando con seriedad este problema?"
-    imagen="/img/tarjetas-articulos/desigualdad-thumbnail.png"
-    url="https://ciudatos-bolivia.github.io/urbanizacion-en-bolivia/"
-    container="window.location.href='https://ciudatos-bolivia.github.io/urbanizacion-en-bolivia/'"
-  />
-  <ArticleCard
-  
-    titulo="Cómo los automóviles se convirtieron en el centro del diseño de las calles bolivianas"
-    fecha="30/06/2023"
-    descripcion="Las calles bolivianas se están diseñando para servir un tipo específico del transporte: el transporte motorizado. ¿Cómo es que las calles bolivianas terminaron construyéndose únicamente para el automóvil y se olvidaron de los peatones?"
-    imagen="/img/tarjetas-articulos/calles-thumbnail2.png"
-    url="https://ciudatos-bolivia.github.io/diseno-calles/"
-    container="window.location.href='https://ciudatos-bolivia.github.io/diseno-calles/'"
-  />
+  {articles.slice(0, maxArticles[view]).map((article) => (
+    <ArticleCard
+      key={article.id}
+      titulo={article.titulo}
+      fecha={article.fecha}
+      descripcion={article.descripcion}
+      imagen={article.imagen}
+      url={article.url}
+      container="window.location.href='{article.url}'"
+    />
+  ))}
 </div>
