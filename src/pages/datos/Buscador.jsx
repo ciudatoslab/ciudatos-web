@@ -5,7 +5,9 @@ import AsideDatos from "../../components/AsideDatos.jsx";
 const Buscador = () => {
   const [users, setUsers] = useState([]);
   const [search, setSearch] = useState("");
-  const [selectedTheme, setSelectedTheme] = useState(""); // Nuevo estado para el tema seleccionado
+  const [selectedTheme, setSelectedTheme] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(10);
 
   const showdatasets = () => {
     setUsers(datasets);
@@ -13,9 +15,9 @@ const Buscador = () => {
 
   const searcher = (e) => {
     setSearch(e.target.value);
+    setCurrentPage(1);
   };
 
-  // Función para filtrar por tema
   const filterByTheme = (theme) => {
     setSelectedTheme(theme);
   };
@@ -30,6 +32,12 @@ const Buscador = () => {
   const filteredResults = selectedTheme
     ? results.filter((user) => user.tema === selectedTheme)
     : results;
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = filteredResults.slice(indexOfFirstItem, indexOfLastItem);
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   useEffect(() => {
     showdatasets();
@@ -51,8 +59,7 @@ const Buscador = () => {
             Buscar datos
           </label>
           <div className="relative">
-
-          <input
+            <input
               value={search}
               onChange={searcher}
               placeholder="¿Qué datos estás buscando?"
@@ -78,12 +85,10 @@ const Buscador = () => {
                 />
               </svg>
             </div>
-            
           </div>
         </div>
         <div className="flex flex-col items-center">
-          {/* Mostrar resultados filtrados */}
-          {filteredResults.map((user) => (
+          {currentItems.map((user) => (
             <a
               href={`/datos/${user.slug}`}
               className="flex flex-col h-300 my-5 mx-4 items-center rounded-lg shadow-lg sm:flex-row sm:min-w-xl sm:mx-0 hover:bg-gray-100 animate-fade"
@@ -94,7 +99,6 @@ const Buscador = () => {
                 src={`/img/tarjetas-datos/${user.img}`}
                 alt={user.nombre}
               />
-
               <div className="flex flex-col p-4 sm:w-2/3">
                 <h4 className="font-rubik mb-2 text-xl font-semibold tracking-tight text-gray-900">
                   {user.nombre}
@@ -102,18 +106,31 @@ const Buscador = () => {
                 <p className="font-rubik mb-2 text-sm tracking-tight text-sub-texto">
                   {user.autor}
                 </p>
-                <p className="font-rubik mb-2 text-sm line-clamp-2 overflow-ellipsis font-light tracking-tight text-texto sm:max-w-xs sm:line-clamp-2 sm:max-w-md">
+                <p className="font-rubik mb-2 text-sm line-clamp-2 overflow-ellipsis font-light tracking-tight text-texto sm:max-w-xs sm:line-clamp-2 md:max-w-md">
                   {user.descripcion}
                 </p>
-
                 <div className="flex flex-col items-center ">
-                <p className="font-rubik border font-thin text-xs border-azul-ciudatos text-azul-ciudatos rounded-full py-1 px-2 mt-5">
-                  {user.tema}
-                </p>
+                  <p className="font-rubik border font-thin text-xs border-azul-ciudatos text-azul-ciudatos rounded-full py-1 px-2 mt-5">
+                    {user.tema}
+                  </p>
                 </div>
               </div>
             </a>
           ))}
+          {/* Paginador */}
+          <div className="flex justify-center my-4">
+            {Array.from({ length: Math.ceil(filteredResults.length / itemsPerPage) }).map((_, index) => (
+              <button
+                key={index}
+                onClick={() => paginate(index + 1)}
+                className={`mx-1 px-3 py-1 border rounded ${
+                  currentPage === index + 1 ? "bg-blue-500 text-white" : "bg-gray-200 text-gray-700"
+                }`}
+              >
+                {index + 1}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </div>

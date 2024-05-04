@@ -1,26 +1,29 @@
 ---
+import { articles } from "../../../data/blog";
 import ArticleCard from "./ArticleCard.astro";
-import { articles } from "/home/anze7w7/Lab/ciudatos-web/src/data/blog.js";
 
 const maxArticles = {
-  view1: articles.length, // Display all articles 
+  view1: articles.length, // Display all articles
   view2: 2, // Display only 2 articles
 };
 
 const view = Astro.props.view || "view1"; // Get the current view from props
-
 ---
 
 <div class="grid lg:grid-cols-2 gap-14">
-  {articles.slice(0, maxArticles[view]).map((article) => (
-    <ArticleCard
-      key={article.id}
-      titulo={article.titulo}
-      fecha={article.fecha}
-      descripcion={article.descripcion}
-      imagen={article.imagen}
-      url={article.url}
-      container="window.location.href='{article.url}'"
-    />
-  ))}
+  {
+    articles
+      .slice(0, maxArticles[view])
+      .map((article) => (
+        <ArticleCard
+          key={article.id}
+          titulo={article.titulo}
+          fecha={article.fecha}
+          descripcion={article.descripcion}
+          imagen={article.imagen}
+          url={article.url}
+          container="window.location.href='{article.url}'"
+        />
+      ))
+  }
 </div>
