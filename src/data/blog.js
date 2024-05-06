@@ -45,6 +45,16 @@ export const articles =[
         "imagen": "/img/tarjetas-articulos/la-paz.jpeg",
         "url": "blogs/mapas-3d-densidad-poblacional-bolivia",
         "container": "window.location.href='blogs/mapas-3d-densidad-poblacional-bolivia'"
-      }
+      },
+        
+      {
+          "id": "6",
+          "titulo": "Crecimiento de la población urbana en Bolivia",
+          "fecha": "06/11/2023",
+          "descripcion": "Presentamos dos gráficos interactivos que dan cuenta del proceso de urbanización en Bolivia.",
+          "imagen": "/img/tarjetas-articulos/crecimiento-bol.png",
+          "url": "blogs/crecimiento-urbano-bolivia",
+          "container": "window.location.href='blogs/crecimiento-urbano-bolivia'"
+        }
   ]
   
