@@ -12,23 +12,22 @@ interface Props {
 const { key, fecha, titulo, descripcion, imagen, url,container } = Astro.props;
 ---
 
+<a href={url}>
 <div id={key}
   onclick={container}
-  class="ml-7 mr-3 w-10/12 lg:h-auto lg:w-auto md:h-96 md:w-11/12 md:ml-12 sm:mt-5 sm:ml-5 sm:w-auto items-center rounded-lg border border-gray-100 border-b-4 shadow-md lg:hover:border-gray-300 mx-4 md:mx-0 cursor-pointer"
->
+  class="ml-7 mr-3 w-10/12 lg:h-auto lg:w-auto md:h-96 md:w-11/12 md:ml-12 sm:mt-5 sm:ml-5 sm:w-auto items-center rounded-lg border border-gray-100 border-b-4 shadow-md lg:hover:border-gray-300 mx-4 md:mx-0 cursor-pointer">
   <div class="h-52">
-    <a href={url}>
       <img
         src={imagen}
         alt=""
         class="object-cover w-full h-full md:max-h-80 sm:max-h-40"
       />
-    </a>
   </div>
   <div class="ml-8 mt-5 mb-5 mr-8">
-    <a class="text-2xl font-semibold font-raleway hover:underline line-clamp-2">{titulo}</a>
+    <p class="text-2xl font-semibold hover:underline line-clamp-2">{titulo}</p>
 
-    <p class="text-gray-500 text-sm font-extralight mt-2 font-raleway">{fecha}</p>
-    <p class="text-gray-600 text-m font-extralight mt-3 font-raleway line-clamp-2">{descripcion}</p>
+    <p class="text-gray-500 text-sm font-extralight mt-2">{fecha}</p>
+    <p class="text-gray-600 text-m font-extralight mt-3 line-clamp-2">{descripcion}</p>
   </div>
 </div>
+</a>
