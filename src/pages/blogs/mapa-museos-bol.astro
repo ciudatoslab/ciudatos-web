@@ -1,0 +1,57 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout>
+    <div class="flex flex-col gap-5 sm:gap-9 px-4 sm:px-0">
+        <h1 class="text-2xl sm:text-[38px] font-bold  text-azul-ciudatos">Mapa de museos en Bolivia</h1>
+       
+        <p class="text-[#585858] sm:text-[16px]">
+            Fecha: 18/09/2023  
+        </p>
+
+        <p class=" text-[#040404] sm:text-[20px]">
+            Bolivia es un país muy rico y diverso en culturas. Además de haber sido el territorio de culturas prehispánicas que dejaron importantes vestigios arqueológicos, es el lugar donde viven varios pueblos indígenas y también tiene una importante historia nacional, y regional que debe recordarse. Uno de los espacios destinados para contar y preservar la memoria y cultura nacional son los museos, <b>¿pero qué museos hay en Bolivia? ¿Cuántos son y dónde están?</b>
+        </p>
+
+        <img 
+        class="w-auto"
+        src="/img/tarjetas-articulos/cabecera-museos.png"
+        />
+
+        <p class=" text-[#040404] sm:text-[20px]">
+            Las instituciones públicas no proveen datos suficientes sobre los museos en el país. <a href="https://web.archive.org/web/20181222180815/http://minculturas.gob.bo/cms/files/peimincult.pdf" class="text-azul-ciudatos underline">En un documento del 2015</a>, que es el único documento de planificación a nivel nacional que pudimos encontrar, el Viceministerio de Culturas y Turismo señala que Bolivia tiene 97 museos, pero no detalla cuáles son ni en qué lugares están. A nivel municipal, pudimos ver que muy pocas alcaldías comparten mapas o información geográfica sobre sus museos. Aquí hay que destacar, por ejemplo, el trabajo que realizó la alcaldía de La Paz, y la <a href="http://sitservicios.lapaz.bo/geoestadistico/" class="text-azul-ciudatos underline">información que nos brinda su portal geoestadístico.</a>
+        </p>
+
+        <p class=" text-[#040404] sm:text-[20px]">
+            Ante la falta de bases de datos sobre museos bolivianos, decidimos armar una. Combinamos el scraping a los pocos sitios de gobiernos municipales que proveen información, con una búsqueda manual de museos en la prensa y utilizando Google Maps. En total, logramos recolectar datos sobre 233 museos en Bolivia los cuales puedes explorar dando click a esta imagen del mapa 👇.
+        </p>
+
+        <a href="https://labtecnosocial.org/museos-bol/">
+            <img 
+            class="w-auto"
+            src="/img/tarjetas-articulos/museos.png"
+            />
+        </a>
+
+        <h2 class="text-xl sm:text-[34px] font-bold  text-azul-ciudatos">Algunas estadísticas de museos</h2>
+
+        <p class=" text-[#040404] sm:text-[20px]">
+            El departamento con más museos es La Paz que tiene 60 museos, la mayoría ubicados en el área metropolitana paceña y en la zona de Copacabana; mientras que Pando es el departamento donde hay menos museos.
+        </p>
+
+        <div class="flourish-embed flourish-chart" data-src="visualisation/15050561"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+        <p class=" text-[#040404] sm:text-[20px]">
+            En cuanto a las localidades, es evidente que los municipios que forman parte de áreas metropolitanas o ciudades tienen más museos (principalmente el municipio de La Paz y el de Sucre), pero no son los únicos. Encontramos muchos museos comunitarios en zonas rurales del país, varios de ellos administrados por asociaciones comunales o vecinales que preservan información sobre su localidad.
+        </p>
+
+        <div class="flourish-embed flourish-chart" data-src="visualisation/15050608"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+        <h2 class="text-xl sm:text-[34px] font-bold  text-azul-ciudatos">Datos</h2>
+        <p class=" text-[#040404] sm:text-[20px]">
+            Descarga la base de datos <a href="datos/museos-en-bolivia" class="text-azul-ciudatos underline">aquí</a>
+        </p>
+
+    </div>
+</Layout>
