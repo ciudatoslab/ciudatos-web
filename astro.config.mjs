@@ -6,5 +6,6 @@ import pagefind from "astro-pagefind";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react(), pagefind()]
+  integrations: [tailwind(), react(), pagefind()],
+  site: 'https://ciudatoslab.org'
 });
