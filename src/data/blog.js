@@ -36,7 +36,7 @@ export const articles =[
         "descripcion": "🗺 🇧🇴 ¿Dónde viven los bolivianos? Este #MiércolesdeVisualizaciones elaboramos un especial: mapas 3D de la densidad poblacional de los 9 departamentos de Bolivia. ¿Qué ciudades y lugares logras identificar?",
         "imagen": "/img/tarjetas-articulos/la-paz.jpeg",
         "url": "/mapas-3d-densidad-poblacional-bolivia",
-        "container": "window.location.href='blogs/mapas-3d-densidad-poblacional-bolivia'"
+        "container": "window.location.href='mapas-3d-densidad-poblacional-bolivia'"
       },
 
       {
@@ -56,7 +56,7 @@ export const articles =[
         "descripcion": "Presentamos dos gráficos interactivos que dan cuenta del proceso de urbanización en Bolivia.",
         "imagen": "/img/tarjetas-articulos/crecimiento-bol.png",
         "url": "/crecimiento-urbano-bolivia",
-        "container": "window.location.href='blogs/crecimiento-urbano-bolivia'"
+        "container": "window.location.href='/crecimiento-urbano-bolivia'"
       },
 
     {
@@ -66,7 +66,7 @@ export const articles =[
         "descripcion": "¿Cuántos días del año llovió en las ciudades capitales de bolivia el 2021?",
         "imagen": "/img/tarjetas-articulos/lluvia.jpeg",
         "url": "/dias-lluvia",
-        "container": "window.location.href='blogs/dias-lluvia'"
+        "container": "window.location.href='/dias-lluvia'"
       },
       {
           "id": "4",
@@ -75,7 +75,7 @@ export const articles =[
           "descripcion": "Según datos de la encuesta de hogares, en el área urbana de Bolivia existen brechas salariales de género en todas las actividades económicas.",
           "imagen": "/img/tarjetas-articulos/brecha.jpeg",
           "url": "/brecha-salarial-urbana",
-          "container": "window.location.href='blogs/brecha-salarial-urbana'"
+          "container": "window.location.href='/brecha-salarial-urbana'"
         },
         
         {
@@ -85,7 +85,7 @@ export const articles =[
             "descripcion": "Mapa interactivo que muestra varios aspectos de desigualdad socioespacial en el municipio de Cochabamba",
             "imagen": "/img/tarjetas-articulos/desigualdad-cocha.png",
             "url": "/desigualdad-cochabamba",
-            "container": "window.location.href='blogs/desigualdad-cochabamba'"
+            "container": "window.location.href='/desigualdad-cochabamba'"
           },
         
           {
@@ -95,7 +95,7 @@ export const articles =[
               "descripcion": "Galería fotográfica que calcula el porcentaje del espacio ocupado por automóviles en las ciudades de La Paz, El Alto, Cochabamba y Tarija.",
               "imagen": "/img/tarjetas-articulos/galeria-espacio.jpeg",
               "url": "/espacio-calles",
-              "container": "window.location.href='blogs/espacio-calles'"
+              "container": "window.location.href='/espacio-calles'"
             },
         
             {
@@ -105,7 +105,7 @@ export const articles =[
                 "descripcion": "Comparación de precios del transporte público en diferentes países de latinoamérica.",
                 "imagen": "/img/tarjetas-articulos/costo-transporte.png",
                 "url": "/costo-transporte-publico",
-                "container": "window.location.href='blogs/costo-transporte-publico'"
+                "container": "window.location.href='/costo-transporte-publico'"
               },
         
               {
@@ -115,7 +115,7 @@ export const articles =[
                   "descripcion": "¿Cuántas camas hospitalarias hay en cada departamento por mil habitantes?",
                   "imagen": "/img/tarjetas-articulos/camas-hosp.jpeg",
                   "url": "/camas-hosp",
-                  "container": "window.location.href='blogs/camas-hosp'"
+                  "container": "window.location.href='/camas-hosp'"
                 },
         
                 {
@@ -125,7 +125,7 @@ export const articles =[
                     "descripcion": "En este mapa de las antenas de telefonía móvil colocadas en Bolivia entre 2008 y 2022, podemos ver cómo éstas se concentran y conectan los principales centros urbanos del país.",
                     "imagen": "/img/tarjetas-articulos/torres.png",
                     "url": "/torres-telefonia-bol",
-                    "container": "window.location.href='blogs/torres-telefonia-bol'"
+                    "container": "window.location.href='/torres-telefonia-bol'"
                   }
           
     ]
