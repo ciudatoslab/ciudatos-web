@@ -23,7 +23,7 @@ export const articles = [
     "fecha": "18/09/2023",
     "descripcion": "Bolivia es un país muy rico y diverso en culturas. Además de haber sido el territorio de culturas prehispánicas que dejaron importantes vestigios arqueológicos, es el lugar donde viven varios pueblos indígenas y también tiene una importante historia nacional, y regional que debe recordarse. Uno de los espacios destinados para contar y preservar la memoria y cultura nacional son los museos, ¿pero qué museos hay en Bolivia? ¿Cuántos son y dónde están?",
     "imagen": "/img/tarjetas-articulos/museos.png",
-    "url": "blogs/mapa-museos-bol"
+    "url": "/blogs/mapa-museos-bol"
   },
 
   {
