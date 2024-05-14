@@ -1,0 +1,84 @@
+---
+import Layout from "../../layouts/Layout.astro"
+
+---
+
+<Layout>
+    <div class="flex flex-col gap-5 sm:gap-9 px-4 sm:px-0">
+        <h1 class="text-2xl sm:text-[38px] font-bold  text-azul-ciudatos">La paradoja de Braess: ¿más caminos significan mejor tráfico?</h1>
+
+        <p class=" text-[#040404] sm:text-[20px]">
+            El matemático alemán Dietrich Braess postuló en 1968 su famosa paradoja, desde la teoría de redes y juegos. La paradoja de Braess muestra que agregar más vías a una red de transporte, en lugar de alivianar el tráfico, lo empeora e incrementa los tiempos de viaje para todos los usuarios.
+        </p>
+
+        <p class=" text-[#040404] sm:text-[20px]">
+            La paradoja es contraintuitiva, pues normalmente se espera que al agregar más carriles, pasos a desnivel o nuevas vías el tiempo de viaje disminuya, sin embargo, esto no sucede.
+        </p>
+
+        <p class=" text-[#040404] sm:text-[20px]">
+           Un principio básico para comprender esta paradoja es que mientras más automóviles usan una vía, más se reduce la velocidad de todos los que la usan. Si cada conductor toma una ruta considerando solo sus intereses individuales y sin tomar en cuenta las decisiones de los otros conductores, las rutas percibidas como más directas y rápidas se saturan como un agregado de las decisiones colectivas. 
+        </p>
+
+        <h2 class="text-xl sm:text-[34px] font-bold  text-azul-ciudatos">Simulación</h2>
+
+        <p class=" text-[#040404] sm:text-[20px]">
+            En esta simulación los autos desean transitar del punto de origen al punto de destino. El camino principal (en gris) no es una opción porque siempre está congestionado.
+        </p>
+
+        <p class=" text-[#040404] sm:text-[20px]">
+            <b>Primer escenario:</b>
+        </p>
+
+        <p class=" text-[#040404] sm:text-[20px]">
+            1. Los caminos A y B toman una ruta indirecta pero pueden transportar mucho más tráfico
+        </p>
+
+        <p class=" text-[#040404] sm:text-[20px]">
+            2. Los caminos a y b son más cortos, pero están sujetos a congestión. Cuantos más autos, más lento van.
+        </p>
+
+        <p class=" text-[#040404] sm:text-[20px]">
+            3. Inicialmente, sólo estas dos rutas conducen del origen al destino: Ab y aB. Dale al botón iniciar y vigila la visualización y las estadísticas.
+        </p>
+
+        <p class=" text-[#040404] sm:text-[20px]">
+            <b>Segundo escenario:</b>
+        </p>
+
+        <p class=" text-[#040404] sm:text-[20px]">
+            1. Haciendo clic en la X se abre un puente distribuidor en medio del mapa y se generan dos rutas más directas: AB y ab. ¿Esto mejora el flujo del tráfico?
+        </p>
+
+        <p class=" text-[#040404] sm:text-[20px]">
+            2. Compara las estadísticas con el anterior resultado.
+        </p>
+
+        <p class=" text-[#040404] sm:text-[20px]">
+            3. También puedes modificar algunos parámetros abajo.
+        </p>
+
+        <div class="container">
+            <iframe class="responsive-iframe" src="https://ciudatoslab.github.io/paradoja-braess/" allowfullscreen></iframe>
+        </div>
+        
+</Layout>
+
+<style>
+    .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>

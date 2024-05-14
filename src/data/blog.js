@@ -148,7 +148,7 @@ export const articles = [
     "fecha": "14/05/2024",
     "descripcion": "La paradoja de Braess es un fenómeno que se da en redes de transporte, donde la adición de una nueva vía puede empeorar el tráfico.",
     "imagen": "/img/tarjetas-articulos/braess.png",
-    "url": "https://ciudatoslab.github.io/paradoja-braess/",
+    "url": "/modelos/paradoja-braess",
     "categoria": "Modelo",
     "destacado": true
   }
