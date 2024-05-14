@@ -6,7 +6,7 @@ export const articles = [
     "fecha": "6/11/2023",
     "descripcion": "Hoy en día, el 75% de los bolivianos viven en ciudades, por lo cual hacer de ellas un lugar más equitativo debería ser una política prioritaria para las autoridades en todos los niveles de gobierno. ¿Pero realmente se están tomando con seriedad este problema?",
     "imagen": "/img/tarjetas-articulos/desigualdad-thumbnail.png",
-    "url": "https://ciudatos-bolivia.github.io/urbanizacion-en-bolivia/",
+    "url": "https://ciudatoslab.github.io/urbanizacion-en-bolivia/",
     "categoria": "Historia",
     "destacado": true
   },
@@ -16,7 +16,7 @@ export const articles = [
     "fecha": "30/06/2023",
     "descripcion": "Las calles bolivianas se están diseñando para servir un tipo específico del transporte: el transporte motorizado. ¿Cómo es que las calles bolivianas terminaron construyéndose únicamente para el automóvil y se olvidaron de los peatones?",
     "imagen": "/img/tarjetas-articulos/calles-thumbnail2.png",
-    "url": "https://ciudatos-bolivia.github.io/diseno-calles/",
+    "url": "https://ciudatoslab.github.io/diseno-calles/",
     "categoria": "Historia",
     "destacado": true
   },
@@ -148,7 +148,7 @@ export const articles = [
     "fecha": "14/05/2024",
     "descripcion": "La paradoja de Braess es un fenómeno que se da en redes de transporte, donde la adición de una nueva vía puede empeorar el tráfico.",
     "imagen": "/img/tarjetas-articulos/braess.png",
-    "url": "https://ciudatos-bolivia.github.io/paradoja-braess/",
+    "url": "https://ciudatoslab.github.io/paradoja-braess/",
     "categoria": "Modelo",
     "destacado": true
   }
