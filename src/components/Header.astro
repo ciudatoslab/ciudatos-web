@@ -24,25 +24,22 @@
             >
           </li>
           <li>
-            <a href="/blogs" class="mb-4 text-black font-normal mr-4 md:mr-8"
-              >Blog</a
+            <a
+              href="/visualizaciones"
+              class="mb-4 text-black font-normal mr-4 md:mr-8"
+              >Visualizaciones</a
             >
           </li>
           <li>
-            <div class="flex flex-row items-center mt-2 mb-5">
-              <a
-                href="https://github.com/ciudatos-bolivia/"
-                target="_blank"
-                class="items-center"
-              >
-                <img
-                  src="/img/social-media/github.png"
-                  alt="GitHub"
-                  class="h-9 mr-2"
-                />
-              </a>
-              <p>Github</p>
-            </div>
+            <a href="/modelos" class="mb-4 text-black font-normal mr-4 md:mr-8"
+              >Modelos</a
+            >
+          </li>
+          <li>
+            <a
+              href="/historias"
+              class="mb-4 text-black font-normal mr-4 md:mr-8">Historias</a
+            >
           </li>
         </ul>
       </nav>
@@ -77,21 +74,31 @@
   <!--Navbar normal -->
   <div class="hidden md:block">
     <nav class="flex">
-      <a href="/datos" class="text-black font-normal mr-4 mt-2 md:mr-8 hover:font-bold">Datos</a>
-      <a href="/blogs" class="text-black font-normal mr-4 mt-2 md:mr-8 hover:font-bold">Blog</a>
       <a
-        href="https://github.com/ciudatos-bolivia/"
-        target="_blank"
-        class="items-center"
+        href="/datos"
+        class="text-black font-normal mr-4 mt-2 md:mr-8 hover:font-bold"
+        >Datos</a
       >
-        <img src="/img/social-media/github.png" alt="GitHub" class="h-9" />
-      </a>
+      <a
+        href="/visualizaciones"
+        class="text-black font-normal mr-4 mt-2 md:mr-8 hover:font-bold"
+        >Visualizaciones</a
+      >
+      <a
+        href="/modelos"
+        class="text-black font-normal mr-4 mt-2 md:mr-8 hover:font-bold"
+        >Modelos</a
+      >
+      <a
+        href="/historias"
+        class="text-black font-normal mr-4 mt-2 md:mr-8 hover:font-bold"
+        >Historias</a
+      >
     </nav>
   </div>
 
   <!--Script para mostrar/quitar el modal -->
   <script>
-
     const openModalButton = document.getElementById("openModal");
     const modal = document.getElementById("modal");
     const header = document.getElementById("header");
@@ -106,6 +113,5 @@
         modal.classList.add("hidden");
       }
     });
-    
   </script>
 </header>

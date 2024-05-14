@@ -6,7 +6,9 @@ export const articles = [
     "fecha": "6/11/2023",
     "descripcion": "Hoy en día, el 75% de los bolivianos viven en ciudades, por lo cual hacer de ellas un lugar más equitativo debería ser una política prioritaria para las autoridades en todos los niveles de gobierno. ¿Pero realmente se están tomando con seriedad este problema?",
     "imagen": "/img/tarjetas-articulos/desigualdad-thumbnail.png",
-    "url": "https://ciudatos-bolivia.github.io/urbanizacion-en-bolivia/"
+    "url": "https://ciudatos-bolivia.github.io/urbanizacion-en-bolivia/",
+    "categoria": "Historia",
+    "destacado": true
   },
   {
     "id": "2",
@@ -14,7 +16,9 @@ export const articles = [
     "fecha": "30/06/2023",
     "descripcion": "Las calles bolivianas se están diseñando para servir un tipo específico del transporte: el transporte motorizado. ¿Cómo es que las calles bolivianas terminaron construyéndose únicamente para el automóvil y se olvidaron de los peatones?",
     "imagen": "/img/tarjetas-articulos/calles-thumbnail2.png",
-    "url": "https://ciudatos-bolivia.github.io/diseno-calles/"
+    "url": "https://ciudatos-bolivia.github.io/diseno-calles/",
+    "categoria": "Historia",
+    "destacado": true
   },
 
   {
@@ -23,7 +27,9 @@ export const articles = [
     "fecha": "18/09/2023",
     "descripcion": "Bolivia es un país muy rico y diverso en culturas. Además de haber sido el territorio de culturas prehispánicas que dejaron importantes vestigios arqueológicos, es el lugar donde viven varios pueblos indígenas y también tiene una importante historia nacional, y regional que debe recordarse. Uno de los espacios destinados para contar y preservar la memoria y cultura nacional son los museos, ¿pero qué museos hay en Bolivia? ¿Cuántos son y dónde están?",
     "imagen": "/img/tarjetas-articulos/museos.png",
-    "url": "/blogs/mapa-museos-bol"
+    "url": "/historias/mapa-museos-bol",
+    "categoria": "Historia",
+    "destacado": true
   },
 
   {
@@ -32,7 +38,9 @@ export const articles = [
     "fecha": "31/05/2023",
     "descripcion": "🗺 🇧🇴 ¿Dónde viven los bolivianos? Este #MiércolesdeVisualizaciones elaboramos un especial: mapas 3D de la densidad poblacional de los 9 departamentos de Bolivia. ¿Qué ciudades y lugares logras identificar?",
     "imagen": "/img/tarjetas-articulos/la-paz.jpeg",
-    "url": "/blogs/mapas-3d-densidad-poblacional-bolivia"
+    "url": "/visualizaciones/mapas-3d-densidad-poblacional-bolivia",
+    "categoria": "Visualización",
+    "destacado": true
   },
 
   {
@@ -41,7 +49,9 @@ export const articles = [
     "fecha": "08/02/2023",
     "descripcion": "La Ceja de El Alto es uno de los núcleos territoriales más importantes área del metropolitana paceña. En este artículo interactivo te contamos cómo se organiza su territorio bajo sus propias lógicas.",
     "imagen": "/img/tarjetas-articulos/elalto.jpeg",
-    "url": "https://labtecnosocial.org/la-ceja/"
+    "url": "https://labtecnosocial.org/la-ceja/",
+    "categoria": "Historia",
+    "destacado": true,
   },
 
   {
@@ -50,7 +60,9 @@ export const articles = [
     "fecha": "06/11/2023",
     "descripcion": "Presentamos dos gráficos interactivos que dan cuenta del proceso de urbanización en Bolivia.",
     "imagen": "/img/tarjetas-articulos/crecimiento-bol.png",
-    "url": "/blogs/crecimiento-urbano-bolivia"
+    "url": "/visualizaciones/crecimiento-urbano-bolivia",
+    "categoria": "Visualización",
+    "destacado": false
   },
 
   {
@@ -59,7 +71,9 @@ export const articles = [
     "fecha": "19/04/2023",
     "descripcion": "¿Cuántos días del año llovió en las ciudades capitales de bolivia el 2021?",
     "imagen": "/img/tarjetas-articulos/lluvia.jpeg",
-    "url": "/blogs/dias-lluvia"
+    "url": "/visualizaciones/dias-lluvia",
+    "categoria": "Visualización",
+    "destacado": false
   },
   {
     "id": "4",
@@ -67,7 +81,9 @@ export const articles = [
     "fecha": "03/05/2023",
     "descripcion": "Según datos de la encuesta de hogares, en el área urbana de Bolivia existen brechas salariales de género en todas las actividades económicas.",
     "imagen": "/img/tarjetas-articulos/brecha.jpeg",
-    "url": "/blogs/brecha-salarial-urbana"
+    "url": "/visualizaciones/brecha-salarial-urbana",
+    "categoria": "Visualización",
+    "destacado": false
   },
 
   {
@@ -76,7 +92,10 @@ export const articles = [
     "fecha": "06/11/2023",
     "descripcion": "Mapa interactivo que muestra varios aspectos de desigualdad socioespacial en el municipio de Cochabamba",
     "imagen": "/img/tarjetas-articulos/desigualdad-cocha.png",
-    "url": "/blogs/desigualdad-cochabamba"
+    "url": "/visualizaciones/desigualdad-cochabamba",
+    "categoria": "Visualización",
+    "destacado": false
+
   },
 
   {
@@ -85,7 +104,10 @@ export const articles = [
     "fecha": "04/07/2023",
     "descripcion": "Galería fotográfica que calcula el porcentaje del espacio ocupado por automóviles en las ciudades de La Paz, El Alto, Cochabamba y Tarija.",
     "imagen": "/img/tarjetas-articulos/galeria-espacio.jpeg",
-    "url": "/blogs/espacio-calles"
+    "url": "/visualizaciones/espacio-calles",
+    "categoria": "Visualización",
+    "destacado": false
+
   },
 
   {
@@ -94,7 +116,9 @@ export const articles = [
     "fecha": "04/07/2023",
     "descripcion": "Comparación de precios del transporte público en diferentes países de latinoamérica.",
     "imagen": "/img/tarjetas-articulos/costo-transporte.png",
-    "url": "/blogs/costo-transporte-publico"
+    "url": "/visualizaciones/costo-transporte-publico",
+    "categoria": "Visualización",
+    "destacado": false
   },
 
   {
@@ -103,7 +127,9 @@ export const articles = [
     "fecha": "02/08/2023",
     "descripcion": "¿Cuántas camas hospitalarias hay en cada departamento por mil habitantes?",
     "imagen": "/img/tarjetas-articulos/camas-hosp.jpeg",
-    "url": "/blogs/camas-hosp"
+    "url": "/visualizaciones/camas-hosp",
+    "categoria": "Visualización",
+    "destacado": false
   },
 
   {
@@ -112,7 +138,19 @@ export const articles = [
     "fecha": "14/04/2023",
     "descripcion": "En este mapa de las antenas de telefonía móvil colocadas en Bolivia entre 2008 y 2022, podemos ver cómo éstas se concentran y conectan los principales centros urbanos del país.",
     "imagen": "/img/tarjetas-articulos/torres.png",
-    "url": "/blogs/torres-telefonia-bol"
+    "url": "/visualizaciones/torres-telefonia-bol",
+    "categoria": "Visualización",
+    "destacado": false
+  },
+  {
+    "id": "12",
+    "titulo": "La paradoja de Braess: ¿más caminos significan mejor tráfico?",
+    "fecha": "14/05/2024",
+    "descripcion": "La paradoja de Braess es un fenómeno que se da en redes de transporte, donde la adición de una nueva vía puede empeorar el tráfico.",
+    "imagen": "/img/tarjetas-articulos/torres.png",
+    "url": "/modelos/torres-telefonia-bol",
+    "categoria": "Modelo",
+    "destacado": true
   }
 
 ]

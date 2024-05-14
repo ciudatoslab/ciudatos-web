@@ -6,9 +6,17 @@ import ArticleRow from "../components/cards/home/ArticleRow.astro";
 
 <Layout title="Ciudatos | Inicio">
   <Hero />
-  <section class="flex flex-col gap-7 sm:gap-[70px] items-center -mt-20 sm:mt-11">
-    <h2 class="text-2xl sm:text-3xl text-azul-ciudatos text-center font-bold">Conoce nuestro trabajo</h2>
-    <ArticleRow view="view2" />
-    <a href="/blogs" class="text-lg sm:text-2xl hover:text-azul-ciudatos/50 transition-colors duration-1000">Ver más</a>
+  <section
+    class="flex flex-col gap-7 sm:gap-[70px] items-center -mt-20 sm:mt-11"
+  >
+    <h2 class="text-2xl sm:text-3xl text-azul-ciudatos text-center font-bold">
+      Conoce nuestro trabajo
+    </h2>
+    <ArticleRow categoria="Todo" destacado={true} />
+    <a
+      href="/todo"
+      class="text-lg sm:text-2xl hover:text-azul-ciudatos/50 transition-colors duration-1000"
+      >Ver más</a
+    >
   </section>
 </Layout>

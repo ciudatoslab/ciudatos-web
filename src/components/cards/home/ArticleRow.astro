@@ -2,27 +2,27 @@
 import { articles } from "../../../data/blog";
 import ArticleCard from "./ArticleCard.astro";
 
-const maxArticles = {
-  view1: articles.length, // Display all articles
-  view2: 6, // Display only 2 articles
-};
+const categoria = Astro.props.categoria;
+const destacado = Astro.props.destacado || false;
 
-const view = Astro.props.view || "view1"; // Get the current view from props
+const filteredArticles = articles.filter(
+  (article) =>
+    (categoria === "Todo" || article.categoria === categoria) &&
+    (!destacado || article.destacado === true),
+);
 ---
 
 <div class="grid lg:grid-cols-2 gap-14">
   {
-    articles
-      .slice(0, maxArticles[view])
-      .map((article) => (
-        <ArticleCard
-          key={article.id}
-          titulo={article.titulo}
-          fecha={article.fecha}
-          descripcion={article.descripcion}
-          imagen={article.imagen}
-          url={article.url}
-        />
-      ))
+    filteredArticles.map((article) => (
+      <ArticleCard
+        key={article.id}
+        titulo={article.titulo}
+        fecha={article.fecha}
+        descripcion={article.descripcion}
+        imagen={article.imagen}
+        url={article.url}
+      />
+    ))
   }
 </div>
