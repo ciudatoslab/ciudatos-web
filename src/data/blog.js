@@ -147,8 +147,8 @@ export const articles = [
     "titulo": "La paradoja de Braess: ¿más caminos significan mejor tráfico?",
     "fecha": "14/05/2024",
     "descripcion": "La paradoja de Braess es un fenómeno que se da en redes de transporte, donde la adición de una nueva vía puede empeorar el tráfico.",
-    "imagen": "/img/tarjetas-articulos/torres.png",
-    "url": "/modelos/torres-telefonia-bol",
+    "imagen": "/img/tarjetas-articulos/braess.png",
+    "url": "https://ciudatos-bolivia.github.io/paradoja-braess/",
     "categoria": "Modelo",
     "destacado": true
   }
