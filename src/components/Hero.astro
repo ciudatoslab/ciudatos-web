@@ -21,6 +21,10 @@ import verdeCb from "../assets/img/portada/verde-cb.png";
       opacity: 1;
     }
   }
+
+  #presentacion a {
+    text-decoration: underline !important;
+  }
 </style>
 
 <div class="flex flex-col items-center sm:spx-1 mx-auto lg:px-6">
@@ -29,9 +33,17 @@ import verdeCb from "../assets/img/portada/verde-cb.png";
       Te damos la bienvenida a Ciudatos Lab
     </h1>
     <div
-      class="flex flex-col items-center max-w-64 sm:max-w-[540px] text-texto sm:text-xl text-pretty fade-in">
-      <p class="fade-in">
-        Somos un laboratorio urbano de datos en Bolivia. Promovemos los datos abiertos, la explicación de problemas urbanos mediante datos e historias y soluciones urbanísticas innovadoras con tecnología y participación 🏙.
+      class="flex flex-col items-center max-w-64 sm:max-w-[540px] text-texto sm:text-xl text-pretty fade-in"
+    >
+      <p class="fade-in" id="presentacion">
+        Somos un laboratorio urbano de datos en Bolivia. Promovemos los <a
+          href="/datos"
+        >
+          datos abiertos
+        </a>, las <a href="/visualizaciones">visualizaciones</a>, la explicación
+        de problemas urbanos mediante <a href="/historias">historias</a> y la <a
+          href="/modelos">modelación urbana</a
+        > 🏙.
       </p>
     </div>
     <div class="flex flex-col gap-8 sm:flex-row sm:gap-12 fade-in">
@@ -42,8 +54,8 @@ import verdeCb from "../assets/img/portada/verde-cb.png";
       />
       <Button
         outline
-        src="window.location.href='mailto:ciudatos.bolivia@gmail.com?subject=Intenci%C3%B3n%20de%20colaboraci%C3%B3n%20con%20datasets%20con%20Ciudatos%20Bolivia';"
-        title="Colabora con nosotros"
+        src="window.location.href='/todo';"
+        title="Explora nuestros trabajos"
         className="fade-in"
       />
     </div>
