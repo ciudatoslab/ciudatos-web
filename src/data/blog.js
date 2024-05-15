@@ -47,7 +47,7 @@ export const articles = [
     "id": "13",
     "titulo": "Explorando un laboratorio espacial urbano: funciones híbridas en La Ceja de El Alto",
     "fecha": "08/02/2023",
-    "descripcion": "La Ceja de El Alto es uno de los núcleos territoriales más importantes área del metropolitana paceña. En este artículo interactivo te contamos cómo se organiza su territorio bajo sus propias lógicas.",
+    "descripcion": "Colaboración con Vania Calle y los estudiantes de arquitectura de la UMSA. La Ceja de El Alto es uno de los núcleos territoriales más importantes área del metropolitana paceña. En este artículo interactivo te contamos cómo se organiza su territorio bajo sus propias lógicas.",
     "imagen": "/img/tarjetas-articulos/elalto.jpeg",
     "url": "https://labtecnosocial.org/la-ceja/",
     "categoria": "Historia",
