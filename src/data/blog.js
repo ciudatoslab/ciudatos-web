@@ -40,7 +40,7 @@ export const articles = [
     "imagen": "/img/tarjetas-articulos/la-paz.jpeg",
     "url": "/visualizaciones/mapas-3d-densidad-poblacional-bolivia",
     "categoria": "Visualización",
-    "destacado": true
+    "destacado": false
   },
 
   {
@@ -160,7 +160,7 @@ export const articles = [
     "imagen": "/img/tarjetas-articulos/velocidad-internet.png",
     "url": "https://ciudatoslab.github.io/mapa3d-velointernet/",
     "categoria": "Historia",
-    "destacado": false
+    "destacado": true
   }
 
 ]
