@@ -158,7 +158,7 @@ export const articles = [
     "fecha": "16/05/2024",
     "descripcion": "El mapa nos muestra que existen brechas espaciales de calidad del acceso. La velocidad de internet es mejor en los centros que en las periferias, al igual que la distribución espacial de otros servicios básicos.",
     "imagen": "/img/tarjetas-articulos/velocidad-internet.png",
-    "url": "/modelos/paradoja-braess",
+    "url": "",
     "categoria": "Historia",
     "destacado": false
   }
