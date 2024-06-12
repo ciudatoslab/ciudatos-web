@@ -31,9 +31,10 @@ const files = Object.keys(dataset)
   .filter((key) => dataset[key] !== "");
 ---
 
-<Layout title={dataset.nombre}
-img={dataset.img}
-description={dataset.descripcion}>
+<Layout 
+  title={dataset.nombre}
+  img={`https://ciudatoslab.org/img/tarjetas-datos/${dataset.img}`}
+  description={dataset.descripcion}>
   <div class="flex flex-col gap-5 sm:gap-9 px-4 sm:px-0">
     <h1 class="text-3xl sm:text-[40px] text-azul-ciudatos font-bold">
       {dataset.nombre}
