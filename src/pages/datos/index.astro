@@ -1,20 +1,31 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Buscador from "../datos/Buscador.jsx";
-
 ---
+
 <head>
-  <meta charset="UTF-8">
-    <meta name="viewport">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+  />
 </head>
 
-<Layout title="Datos" 
-img="https://ciudatoslab.org/img/tarjetas-articulos/meta-ciudatos.png"
-description="Explora una amplia gama de información en nuestras secciones de datos, que abarcan áreas tan diversas como transporte, salud, territorios, tecnología, medio ambiente, educación, ¡y mucho más! 📊">
+<Layout
+  title="Datos"
+  img="https://ciudatoslab.org/img/tarjetas-articulos/meta-ciudatos.png"
+  description="Explora una amplia gama de información en nuestras secciones de datos, que abarcan áreas tan diversas como transporte, salud, territorios, tecnología, medio ambiente, educación, ¡y mucho más! 📊"
+>
   <h1 class="mb-8"></h1>
-    <h2 class="text-2xl sm:text-4xl text-azul-ciudatos text-center font-bold pb-9 lg:pb-0">Datos</h2>
-    <Buscador client:only/>
-
-
+  <h2
+    class="text-2xl sm:text-4xl text-azul-ciudatos text-center font-bold pb-9 lg:pb-0"
+  >
+    Datos
+  </h2>
+  <Buscador client:only />
 </Layout>

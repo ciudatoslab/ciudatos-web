@@ -8,6 +8,8 @@ const Buscador = () => {
   const [selectedTheme, setSelectedTheme] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(10);
+  const [canForward, setCanForward] = useState(true);
+  const [canBack, setCanBack] = useState(false);
 
   const showdatasets = () => {
     setUsers(datasets);
@@ -19,6 +21,7 @@ const Buscador = () => {
   };
 
   const filterByTheme = (theme) => {
+    setCurrentPage(1);
     setSelectedTheme(theme);
   };
 
@@ -32,12 +35,37 @@ const Buscador = () => {
   const filteredResults = selectedTheme
     ? results.filter((user) => user.tema === selectedTheme)
     : results;
+  const limitePaginas = Math.ceil(filteredResults.length / itemsPerPage);
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = filteredResults.slice(indexOfFirstItem, indexOfLastItem);
+  const paginate = (pageNumber) => {
+    if (pageNumber == 1) {
+      setCanBack(false);
+      setCanForward(true);
+    }
+    if (pageNumber > 1) setCanBack(true);
+    if (pageNumber == limitePaginas) setCanForward(false);
+    setCurrentPage(pageNumber);
+  };
+  const nextPage = (pagina) => {
+    if (pagina + 1 == limitePaginas) setCanForward(false);
+    if (pagina + 1 > 1) setCanBack(true);
+    if (currentPage + 1 > limitePaginas) {
+      setCanForward(false);
+      return;
+    }
+    if (currentPage - 1 >= limitePaginas) setCanForward(false);
 
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+    setCurrentPage(currentPage + 1);
+  };
+  const previousPage = (pagina) => {
+    if (pagina - 1 < limitePaginas) setCanForward(true);
+    if (pagina - 1 == 1) setCanBack(false);
+    if (currentPage <= 1) return;
+    setCurrentPage(currentPage - 1);
+  };
 
   useEffect(() => {
     showdatasets();
@@ -119,17 +147,43 @@ const Buscador = () => {
           ))}
           {/* Paginador */}
           <div className="flex justify-center my-4">
-            {Array.from({ length: Math.ceil(filteredResults.length / itemsPerPage) }).map((_, index) => (
+            <button
+              key="previous"
+              onClick={() => previousPage(currentPage)}
+              className={`mx-1 px-3 border bg-gray-200 text-gray-700 rounded ${
+                !canBack ? "hidden" : ""
+              }`}
+            >
+              <span className="material-symbols-outlined mt-2 ">
+                arrow_back
+              </span>
+            </button>
+            {Array.from({
+              length: limitePaginas,
+            }).map((_, index) => (
               <button
                 key={index}
                 onClick={() => paginate(index + 1)}
-                className={`mx-1 px-3 py-1 border rounded ${
-                  currentPage === index + 1 ? "bg-blue-500 text-white" : "bg-gray-200 text-gray-700"
-                }`}
+                className={`mx-1 px-3 py-1 border rounded  ${
+                  currentPage === index + 1
+                    ? "bg-blue-500 text-white"
+                    : "bg-gray-200 text-gray-700"
+                }   `}
               >
                 {index + 1}
               </button>
             ))}
+            <button
+              key="next"
+              onClick={() => nextPage(currentPage)}
+              className={`mx-1 px-3 border bg-gray-200 text-gray-700 rounded ${
+                !canForward ? "hidden" : ""
+              }`}
+            >
+              <span className="material-symbols-outlined mt-2 ">
+                arrow_forward
+              </span>
+            </button>
           </div>
         </div>
       </div>
