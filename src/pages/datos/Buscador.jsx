@@ -164,7 +164,7 @@ const Buscador = () => {
               <button
                 key={index}
                 onClick={() => paginate(index + 1)}
-                className={`mx-1 px-3 py-1 border rounded  ${
+                className={`mx-1 px-3 py-1 border rounded max-[700px]:hidden  ${
                   currentPage === index + 1
                     ? "bg-blue-500 text-white"
                     : "bg-gray-200 text-gray-700"
