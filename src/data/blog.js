@@ -18,7 +18,7 @@ export const articles = [
     "imagen": "/img/tarjetas-articulos/calles-thumbnail2.png",
     "url": "https://ciudatoslab.github.io/diseno-calles/",
     "categoria": "Historia",
-    "destacado": true
+    "destacado": false
   },
 
   {
@@ -159,6 +159,16 @@ export const articles = [
     "descripcion": "El mapa nos muestra que existen brechas espaciales de calidad del acceso. La velocidad de internet es mejor en los centros que en las periferias, al igual que la distribución espacial de otros servicios básicos.",
     "imagen": "/img/tarjetas-articulos/velocidad-internet.png",
     "url": "https://ciudatoslab.github.io/mapa3d-velointernet/",
+    "categoria": "Historia",
+    "destacado": true
+  },
+  {
+    "id": "14",
+    "titulo": "El problema del tráfico vehicular en Bolivia: congestión, política y planificación.",
+    "fecha": "19/08/2024",
+    "descripcion": "El problema del tráfico en Bolivia es muy complejo. Estamos ante un sistema que resuelve las necesidades de transporte de los ciudadanos, pero de una manera muy ineficiente, dado que ocasiona embotellamientos. ¿Cómo podemos cambiar este sistema? ¿Es posible?",
+    "imagen": "/img/tarjetas-articulos/trafico-thumbnail.jpg",
+    "url": "https://ciudatoslab.github.io/trafico-en-bolivia/",
     "categoria": "Historia",
     "destacado": true
   }
