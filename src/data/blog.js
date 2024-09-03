@@ -51,7 +51,7 @@ export const articles = [
     "imagen": "/img/tarjetas-articulos/elalto.jpeg",
     "url": "https://labtecnosocial.org/la-ceja/",
     "categoria": "Historia",
-    "destacado": true,
+    "destacado": false,
   },
 
   {
