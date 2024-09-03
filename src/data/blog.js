@@ -171,6 +171,16 @@ export const articles = [
     "url": "https://ciudatoslab.github.io/trafico-en-bolivia/",
     "categoria": "Historia",
     "destacado": true
+  },
+  {
+    "id": "15",
+    "titulo": "Mapa interactivo del crecimiento poblacional en Bolivia #Censo2024",
+    "fecha": "01/08/2024",
+    "descripcion": "Este mapa interactivo muestra el crecimiento poblacional de los municipios en #Bolivia con los datos del Censo 2024. Ofrece información del crecimiento porcentual, y las diferencias con el censo del 2012 y con las proyecciones realizadas por el INE.",
+    "imagen": "/img/tarjetas-articulos/mapa-censo.jpg",
+    "url": "https://ciudatoslab.github.io/mapa-censo/",
+    "categoria": "Visualización",
+    "destacado": true
   }
 
 ]
