@@ -1,276 +1,675 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import {
+  ArticleLayout,
+  ArticleFecha,
+  ArticleLink,
+  ArticleParrafo,
+  ArticleSubtitle,
+  ArticleTitle,
+  ArticleCita,
+  ArticleLeyenda,
+} from "../../components/articleComponents";
 ---
-<Layout
-    title="El problema del tráfico vehicular en Bolivia: congestión, política y planificación"
-    img="https://ciudatoslab.org/img/tarjetas-articulos/trafico-thumbnail.jpg"
-    description="El problema del tráfico en Bolivia es muy complejo. Estamos ante un sistema que resuelve las necesidades de transporte de los ciudadanos, pero de una manera muy ineficiente, dado que ocasiona embotellamientos. ¿Cómo podemos cambiar este sistema? ¿Es posible?"
+
+<ArticleLayout
+  title="El problema del tráfico vehicular en Bolivia: congestión, política y planificación"
+  img="https://ciudatoslab.org/img/tarjetas-articulos/trafico-thumbnail.jpg"
+  description="El problema del tráfico en Bolivia es muy complejo. Estamos ante un sistema que resuelve las necesidades de transporte de los ciudadanos, pero de una manera muy ineficiente, dado que ocasiona embotellamientos. ¿Cómo podemos cambiar este sistema? ¿Es posible?"
 >
+  <ArticleTitle>
+    El problema del tráfico vehicular en Bolivia: congestión política y
+    planificación
+  </ArticleTitle>
+  <ArticleFecha>Fecha: 20/08/2024</ArticleFecha>
 
-<div class="flex flex-col gap-5 sm:gap-9 px-4 sm:px-0">
-    <h1 class="text-2xl sm:text-[38px] font-bold  text-azul-ciudatos">El problema del tráfico vehicular en Bolivia: congestión política y planificación</h1>
-    <p class="text-[#585858] sm:text-[16px]">
-        Fecha: 20/08/2024  
-    </p>
+  <ArticleParrafo>
+    El siguiente mapa muestra algunos recorridos realizados por nuestro equipo
+    de investigación en Cochabamba. Recorrimos la ciudad usando varias líneas de
+    transporte público hacia lugares donde trabajamos o estudiamos. En el mapa
+    se puede apreciar que líneas de transporte conectan puntos alejados de la
+    ciudad con el centro, donde las rutas se aglomeran y, en algunos casos, se
+    sobreponen. Varias de ellas pasan cerca de la UMSS y el centro histórico.
+  </ArticleParrafo>
 
-    <p class="text-[#040404] sm:text-[18px]">El siguiente mapa muestra algunos recorridos realizados por nuestro equipo de investigación en Cochabamba. Recorrimos la ciudad usando varias líneas de transporte público hacia lugares donde trabajamos o estudiamos. En el mapa se puede apreciar que líneas de transporte conectan puntos alejados de la ciudad con el centro, donde las rutas se
-        aglomeran y, en algunos casos, se sobreponen. Varias de ellas pasan cerca de la UMSS y el centro histórico.
-    </p>
+  <iframe src="https://flo.uri.sh/story/2508379/embed#slide-0" height="600px"
+  ></iframe>
 
-    <iframe src="https://flo.uri.sh/story/2508379/embed#slide-0" height="600px"></iframe>
+  <ArticleParrafo>
+    A continuación, tenemos una fotografía aérea de una de las recurrentes
+    trancaderas en la avenida Oquendo, donde se encuentra el ingreso al campus
+    de la Universidad. Aquí, en horas pico, los pasajeros pueden perder hasta
+    veinte minutos recorriendo solamente un par de cuadras. Las vías se saturan
+    muy rápido porque centenares de taxitrufis pasan por el mismo lugar.
+  </ArticleParrafo>
 
-    <p class="text-[#040404] sm:text-[18px]">A continuación, tenemos una fotografía aérea de una de las recurrentes trancaderas en la avenida Oquendo, donde
-        se encuentra el ingreso al campus de la Universidad. Aquí, en horas pico, los pasajeros pueden perder hasta veinte minutos recorriendo solamente un
-        par de cuadras. Las vías se saturan muy rápido porque centenares de taxitrufis pasan por el
-        mismo lugar.
-    </p>
+  <iframe src="https://flo.uri.sh/story/2508379/embed#slide-2" height="600px"
+  ></iframe>
 
-    <iframe src="https://flo.uri.sh/story/2508379/embed#slide-2" height="600px"></iframe>
-    
-    <p class="text-[#040404] sm:text-[18px]">Lo mismo sucede en La Paz. El siguiente mapa muestra los recorridos de nuestro equipo en un día
-        cotidiano, y vemos claramente que las rutas van desde barrios bastante alejados, aglomerándose
-        en el centro. Los minibuses que tomaron los miembros de nuestro equipo pasan por la unión de la avenida Camacho
-        con la Mariscal Santa Cruz, en una zona muy importante para la urbe paceña.
-    </p>
+  <ArticleParrafo>
+    Lo mismo sucede en La Paz. El siguiente mapa muestra los recorridos de
+    nuestro equipo en un día cotidiano, y vemos claramente que las rutas van
+    desde barrios bastante alejados, aglomerándose en el centro. Los minibuses
+    que tomaron los miembros de nuestro equipo pasan por la unión de la avenida
+    Camacho con la Mariscal Santa Cruz, en una zona muy importante para la urbe
+    paceña.
+  </ArticleParrafo>
 
-    <iframe src="https://flo.uri.sh/story/2508379/embed#slide-3" height="600px"></iframe>
+  <iframe src="https://flo.uri.sh/story/2508379/embed#slide-3" height="600px"
+  ></iframe>
 
-    <p class="text-[#040404] sm:text-[18px]">Pero, como se ve en la imagen, la gran concentración de líneas de transporte público crea
-        trancaderas, no sólo en las vías centrales, sino también en las colaterales.
-    </p>
+  <ArticleParrafo>
+    Pero, como se ve en la imagen, la gran concentración de líneas de transporte
+    público crea trancaderas, no sólo en las vías centrales, sino también en las
+    colaterales.
+  </ArticleParrafo>
 
-    <iframe src="https://flo.uri.sh/story/2508379/embed#slide-4" height="600px"></iframe>
+  <iframe src="https://flo.uri.sh/story/2508379/embed#slide-4" height="600px"
+  ></iframe>
 
-    <p class="text-[#040404] sm:text-[18px]">Y es que, mientras en otras ciudades del mundo el tráfico está ligado al uso excesivo del
-        vehículo privado; en Bolivia, tiene que ver con la forma en la que se organiza el transporte
-        público, que es el principal modo de transporte para los ciudadanos. Por ejemplo, el siguiente gráfico compara las principales formas en las que se mueven las personas de La
-        Paz y Cochabamba. La mayoría usa el transporte público: taxitrufis, minibuses y micros.
-    </p>
+  <ArticleParrafo>
+    Y es que, mientras en otras ciudades del mundo el tráfico está ligado al uso
+    excesivo del vehículo privado; en Bolivia, tiene que ver con la forma en la
+    que se organiza el transporte público, que es el principal modo de
+    transporte para los ciudadanos. Por ejemplo, el siguiente gráfico compara
+    las principales formas en las que se mueven las personas de La Paz y
+    Cochabamba. La mayoría usa el transporte público: taxitrufis, minibuses y
+    micros.
+  </ArticleParrafo>
 
-    <iframe src="https://flo.uri.sh/story/2508379/embed#slide-6" height="600px"></iframe>
+  <iframe src="https://flo.uri.sh/story/2508379/embed#slide-6" height="600px"
+  ></iframe>
 
-    <p class="text-[#040404] sm:text-[18px]"> El problema es que nuestro transporte público es un servicio desregulado, provisto por
-        asociaciones de transporte que no planifican sus rutas con mucha eficiencia. Este mapa muestra las rutas de varios minibuses, micros y taxitrufis en Cochabamba y Santa Cruz. Es bastante claro que los transportistas han diseñado sus rutas para llevar a las personas desde los barrios más alejados hasta las zonas centrales.
-    </p>
+  <ArticleParrafo>
+    El problema es que nuestro transporte público es un servicio desregulado,
+    provisto por asociaciones de transporte que no planifican sus rutas con
+    mucha eficiencia. Este mapa muestra las rutas de varios minibuses, micros y
+    taxitrufis en Cochabamba y Santa Cruz. Es bastante claro que los
+    transportistas han diseñado sus rutas para llevar a las personas desde los
+    barrios más alejados hasta las zonas centrales.
+  </ArticleParrafo>
 
-    <iframe src="https://flo.uri.sh/story/2508379/embed#slide-9" height="600px"></iframe>
+  <iframe src="https://flo.uri.sh/story/2508379/embed#slide-9" height="600px"
+  ></iframe>
 
-    <p class="text-[#040404] sm:text-[18px]">  Si miramos con atención, nos damos cuenta que, para llevar a las personas hacia su destino,
-        las líneas siguen caminos contorsionados por los barrios periféricos; y, ya en el centro, pasan
-        por las mismas calles y avenidas, ocasionando congestionamiento vehicular.
-    </p>
+  <ArticleParrafo>
+    Si miramos con atención, nos damos cuenta que, para llevar a las personas
+    hacia su destino, las líneas siguen caminos contorsionados por los barrios
+    periféricos; y, ya en el centro, pasan por las mismas calles y avenidas,
+    ocasionando congestionamiento vehicular.
+  </ArticleParrafo>
 
-    <p class="text-[#040404] sm:text-[18px]">Todas las ciudades bolivianas tienen el mismo problema: calles centrales
-        saturadas por un sistema de transporte que es accesible para los ciudadanos, pero que no es
-        eficiente con los tiempos de viaje, y genera embotellamientos. ¿Qué rol está jugando el transporte público en el problema del tráfico en Bolivia? Y, más
-        importante, ¿qué podemos hacer para solucionar el problema de los embotellamientos en nuestras
-        ciudades? 
-    </p>
+  <ArticleParrafo>
+    Todas las ciudades bolivianas tienen el mismo problema: calles centrales
+    saturadas por un sistema de transporte que es accesible para los ciudadanos,
+    pero que no es eficiente con los tiempos de viaje, y genera
+    embotellamientos. ¿Qué rol está jugando el transporte público en el problema
+    del tráfico en Bolivia? Y, más importante, ¿qué podemos hacer para
+    solucionar el problema de los embotellamientos en nuestras ciudades?
+  </ArticleParrafo>
 
-    <h2 class="text-xl sm:text-[34px] font-bold  text-azul-ciudatos">¿Cómo nace el tráfico vehicular?</h2>
+  <ArticleSubtitle> ¿Cómo nace el tráfico vehicular? </ArticleSubtitle>
 
-    <p class="text-[#040404] sm:text-[18px]">Iniciemos con una pregunta básica: ¿cómo nacen los embotellamientos? esde la ingeniería del transporte, tenemos dos explicaciones fundamentales: (1) los efectos en cadena de la desaceleración de un vehículo en una fila de automóviles, y (2) la sobrecarga de la infraestructura vial.
-    </p>
+  <ArticleParrafo>
+    Iniciemos con una pregunta básica: ¿cómo nacen los embotellamientos? esde la
+    ingeniería del transporte, tenemos dos explicaciones fundamentales: (1) los
+    efectos en cadena de la desaceleración de un vehículo en una fila de
+    automóviles, y (2) la sobrecarga de la infraestructura vial.
+  </ArticleParrafo>
 
-    <p class="text-[#040404] sm:text-[18px]">Podemos entender la primera explicación con un ejemplo. Si miramos un una fila de varios automóviles que van hacia la misma dirección, basta que uno desacelere un poco para ocasionar una reacción en cadena; que lleva a que todos los que están detrás de él desaceleren y, eventualmente, se detengan.
-    </p>
+  <ArticleParrafo>
+    Podemos entender la primera explicación con un ejemplo. Si miramos un una
+    fila de varios automóviles que van hacia la misma dirección, basta que uno
+    desacelere un poco para ocasionar una reacción en cadena; que lleva a que
+    todos los que están detrás de él desaceleren y, eventualmente, se detengan.
+  </ArticleParrafo>
 
-    <div style="display: flex; align-items: center; justify-content: center;">
-        <iframe width="600px" height="400px" src="https://www.youtube.com/embed/Q78Kb4uLAdA?si=WQ8QfqSBPgJ0PvG_" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <iframe
+      width="600px"
+      height="400px"
+      src="https://www.youtube.com/embed/Q78Kb4uLAdA?si=WQ8QfqSBPgJ0PvG_"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
 
-    <p style="font-style: italic; text-align: center; color: #476589; font-size: 14px;">Formación de un embotellamiento fantasma. <br>No hay ningún obstáculo en la vía, pero por el hecho de que un vehículo desaceleró en un momento determinado, creó un embotellamiento permanente.</p>
+  <ArticleLeyenda>
+    Formación de un embotellamiento fantasma. <br />No hay ningún obstáculo en
+    la vía, pero por el hecho de que un vehículo desaceleró en un momento
+    determinado, creó un embotellamiento permanente.
+  </ArticleLeyenda>
 
-    <p class="text-[#040404] sm:text-[18px]">Como es prácticamente imposible que todos conduzcan a la misma velocidad y distancia entre sí, las trancaderas nacen de forma natural. Los conductores desaceleran para no chocar, para frenar en un semáforo, para dar pie a un peatón, o para cargar pasajeros, que en Bolivia es particularmente caótico porque no existen zonas de parada específicas. Cualquiera que sea el motivo de la desaceleración, si existen automóviles suficientes para ello, los embotellamientos aparecerán.</p>
-    
-    <p class="text-[#040404] sm:text-[18px]">La segunda explicación tiene que ver con la saturación de la infraestructura vial, porque cada calle y avenida tiene un número máximo de vehículos que puede transportar en un periodo de tiempo determinado. De hecho, <a href="https://www.elindependiente.com/futuro/2017/04/15/las-matematicas-del-atasco/">se estima que un carril típico puede transportar aproximadamente 2000 vehículos por hora sin colapsarse.</a> Las trancaderas ocurren cuando este número se sobrepasa, que en el caso boliviano tiene que ver con que muchas líneas de transporte público desembocan en las mismas calles.</p>
+  <ArticleParrafo>
+    Como es prácticamente imposible que todos conduzcan a la misma velocidad y
+    distancia entre sí, las trancaderas nacen de forma natural. Los conductores
+    desaceleran para no chocar, para frenar en un semáforo, para dar pie a un
+    peatón, o para cargar pasajeros, que en Bolivia es particularmente caótico
+    porque no existen zonas de parada específicas. Cualquiera que sea el motivo
+    de la desaceleración, si existen automóviles suficientes para ello, los
+    embotellamientos aparecerán.
+  </ArticleParrafo>
 
-    <p class="text-[#040404] sm:text-[18px]">Además, la capacidad de los vehículos es otro factor que influye en la sobrecarga de las vías.</p>
+  <ArticleParrafo>
+    La segunda explicación tiene que ver con la saturación de la infraestructura
+    vial, porque cada calle y avenida tiene un número máximo de vehículos que
+    puede transportar en un periodo de tiempo determinado. De hecho, <ArticleLink
+      link="https://www.elindependiente.com/futuro/2017/04/15/las-matematicas-del-atasco/"
+      >se estima que un carril típico puede transportar aproximadamente 2000
+      vehículos por hora sin colapsarse.</ArticleLink
+    > Las trancaderas ocurren cuando este número se sobrepasa, que en el caso boliviano
+    tiene que ver con que muchas líneas de transporte público desembocan en las mismas
+    calles.
+  </ArticleParrafo>
 
-    <p class="text-[#040404] sm:text-[18px]">De acuerdo a Freddy Koch, especialista en movilidad urbana sostenible, una forma de evitar la saturación de la infraestructura vial es impulsar el uso de vehículos de alta capacidad. Esto quiere decir que, en lugar de promover el uso de automóviles que pueden transportar a lo sumo 8 o 12 personas; se debería implementar sistemas de buses (o BRT por sus siglas en inglés), como el Pumakatari, de modo que una sola unidad pueda llevar entre 40 a 60 pasajeros.</p>
+  <ArticleParrafo>
+    Además, la capacidad de los vehículos es otro factor que influye en la
+    sobrecarga de las vías.
+  </ArticleParrafo>
 
-    <p class="text-[#040404] sm:text-[18px]">Sin embargo, como nos indica el experto, el problema es que las líneas de transporte público usan vehículos de muy baja capacidad, como los taxitufis y minibuses, que satisfacen la demanda de movilidad con más vehículos de los necesarios. Este es un gran problema para las áreas metropolitanas de La Paz, Cochabamba y Santa Cruz, donde vive el 45% de la población boliviana, y la demanda del transporte diaria está <a href="https://blogs.iadb.org/transporte/es/el-reto-de-la-integracion-de-los-sistemas-de-transporte-urbano-el-caso-del-area-metropolitana-de-la-paz-bolivia/">entre dos a tres millones de personas</a>, que nuestro transporte público satisface con <a href="https://siip.produccion.gob.bo/noticias/files/2021-820f7-3automot.pdf">decenas de miles de automóviles.</a></p>
+  <ArticleParrafo>
+    De acuerdo a Freddy Koch, especialista en movilidad urbana sostenible, una
+    forma de evitar la saturación de la infraestructura vial es impulsar el uso
+    de vehículos de alta capacidad. Esto quiere decir que, en lugar de promover
+    el uso de automóviles que pueden transportar a lo sumo 8 o 12 personas; se
+    debería implementar sistemas de buses (o BRT por sus siglas en inglés), como
+    el Pumakatari, de modo que una sola unidad pueda llevar entre 40 a 60
+    pasajeros.
+  </ArticleParrafo>
 
-    <p class="text-[#040404] sm:text-[18px]">Para ilustrar este punto, en el siguiente gráfico comparamos cuántos vehículos se necesitarían para mover a 1000 personas, en función a su capacidad. Como se puede ver, los taxi trufis y minibuses, requieren al menos 100 unidades para esta tarea; en comparación al Pumakatari que lo lograría solo con 17 unidades.</p>
+  <ArticleParrafo>
+    Sin embargo, como nos indica el experto, el problema es que las líneas de
+    transporte público usan vehículos de muy baja capacidad, como los taxitufis
+    y minibuses, que satisfacen la demanda de movilidad con más vehículos de los
+    necesarios. Este es un gran problema para las áreas metropolitanas de La
+    Paz, Cochabamba y Santa Cruz, donde vive el 45% de la población boliviana, y
+    la demanda del transporte diaria está <ArticleLink
+      link="https://blogs.iadb.org/transporte/es/el-reto-de-la-integracion-de-los-sistemas-de-transporte-urbano-el-caso-del-area-metropolitana-de-la-paz-bolivia/"
+      >entre dos a tres millones de personas</ArticleLink
+    >, que nuestro transporte público satisface con <ArticleLink
+      link="https://siip.produccion.gob.bo/noticias/files/2021-820f7-3automot.pdf"
+      >decenas de miles de automóviles.</ArticleLink
+    >
+  </ArticleParrafo>
 
-    <div class="flourish-embed flourish-pictogram" data-src="visualisation/19042386"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/19042386/thumbnail" width="100%" alt="pictogram visualization" /></noscript></div>
+  <ArticleParrafo>
+    Para ilustrar este punto, en el siguiente gráfico comparamos cuántos
+    vehículos se necesitarían para mover a 1000 personas, en función a su
+    capacidad. Como se puede ver, los taxi trufis y minibuses, requieren al
+    menos 100 unidades para esta tarea; en comparación al Pumakatari que lo
+    lograría solo con 17 unidades.
+  </ArticleParrafo>
 
-    <p class="text-[#040404] sm:text-[18px]">La siguiente simulación de tráfico vehicular combina los principios de los que hablamos anteriormente. Es una vía central a la que llegan muchas líneas de transporte público, la cual tiene una zona de atasco que obliga a los conductores a disminuir la velocidad al pasar por ahí. Si no hay muchos automóviles usando la vía, no hay trancaderas; pero esto cambia en las horas pico, cuando el número de vehículos incrementa. Puedes usar el control para aumentar o disminuir el flujo de vehículos. Observa qué es lo que sucede.</p>
+  <div
+    class="flourish-embed flourish-pictogram"
+    data-src="visualisation/19042386"
+  >
+    <script src="https://public.flourish.studio/resources/embed.js"
+    ></script><noscript
+      ><img
+        src="https://public.flourish.studio/visualisation/19042386/thumbnail"
+        width="100%"
+        alt="pictogram visualization"
+      /></noscript
+    >
+  </div>
 
-    <iframe src="https://ciudatoslab.github.io/flujo-trafico/" class="sim" height="750px"></iframe>
+  <ArticleParrafo>
+    La siguiente simulación de tráfico vehicular combina los principios de los
+    que hablamos anteriormente. Es una vía central a la que llegan muchas líneas
+    de transporte público, la cual tiene una zona de atasco que obliga a los
+    conductores a disminuir la velocidad al pasar por ahí. Si no hay muchos
+    automóviles usando la vía, no hay trancaderas; pero esto cambia en las horas
+    pico, cuando el número de vehículos incrementa. Puedes usar el control para
+    aumentar o disminuir el flujo de vehículos. Observa qué es lo que sucede.
+  </ArticleParrafo>
 
-    <p class="text-[#040404] sm:text-[18px]">Ahora que entendimos brevemente algunos elementos que ocasionan el tráfico, tenemos pendientes unas cuantas preguntas: ¿Cómo es que las asociaciones de transporte crean sus rutas? ¿Qué retos implicaría para las mejoras de nuestro sistema de transporte?</p>
+  <iframe
+    src="https://ciudatoslab.github.io/flujo-trafico/"
+    class="sim"
+    height="750px"></iframe>
 
-    <h2 class="text-xl sm:text-[34px] font-bold  text-azul-ciudatos">¿Por qué nuestro transporte público recorre las mismas vías?</h2>
-    <p class="text-[#040404] sm:text-[18px]">En Bolivia, las rutas del transporte responden de manera directa a la urbanización y creación de nuevos barrios. Los transportistas modifican sus líneas y trayectos a medida que crece la ciudad y la consecuente demanda de movilidad.</p>
-    <p class="text-[#040404] sm:text-[18px]">En este sentido, Juan Cabrera destaca, en <a href="https://www.scielo.br/j/urbe/a/cYZN7bskdGMnf7kZMCZvWVv/abstract/?lang=es">una reciente investigación</a>, que los transportistas modifican sus rutas a pedido de barrios en las periferias; y es por esta razón que nuestro sistema de transporte es muy accesible para la gente que vive en las zonas más alejadas.</p>
-    <p class="text-[#040404] sm:text-[18px]">Pero esto no es algo nuevo. Esta forma de trazar rutas se ha venido configurando en todo el país desde hace más de 80 años. De hecho, las primeras asociaciones y líneas de transporte urbano, que nacieron al rededor de 1940, ya tenían el propósito de satisfacer la demanda de transporte que iba creciendo en las periferias. Este es el caso de, por ejemplo, la  línea de micros 2, fundada en La Paz <a href="https://amun.bo/evolucion-de-la-linea-2-de-chaucheritas-a-colectivo-micro-y-jumbo/">en 1938</a>.</p>
-    <p class="text-[#040404] sm:text-[18px]">Además, Bianca de Marchi, una investigadora que trabajó la <a href="https://www.academia.edu/103351065/Transportes_pasajeros_y_v%C3%ADas_Aproximaciones_a_la_historia_de_la_integraci%C3%B3n_boliviana">configuración histórica de nuestros sistemas de transporte</a>, señala que la lógica de apropiarse de determinadas rutas para satisfacer la demanda de comunidades alejadas, también se encuentra presente en muchos sindicatos agrarios, que suelen tener “secretarios de transporte”.</p>
-    
-    <div style="display: flex; align-items: center; justify-content: center;">
-        <img src="https://ciudatoslab.github.io/trafico-en-bolivia/img/bus-antiguo.jpg" width="500px">
-    </div>
-    
-    <p style="font-style: italic; text-align: center; color: #476589; font-size: 14px;">Fotografía de un colectivo en mayo de 1968. Sacada del grupo <a
-            href="https://www.facebook.com/groups/LaPazFotosAntiguas/permalink/3163444110370435/">Fotos antiguas
-            de La Paz</a>.</p>
-    <p class="text-[#040404] sm:text-[18px]">A ello se debe sumar que, para obtener la mayor cantidad de ganancias posible, cada línea organiza sus
-        recorridos para pasar por puntos nodales de la ciudad, con tal de llevar y recoger la mayor cantidad de
-        pasajeros. Como resultado, los trayectos se superponen, concentran y desembocan en las mismas calles y
-        avenidas, generando caos vehicular. </p>
+  <ArticleParrafo>
+    Ahora que entendimos brevemente algunos elementos que ocasionan el tráfico,
+    tenemos pendientes unas cuantas preguntas: ¿Cómo es que las asociaciones de
+    transporte crean sus rutas? ¿Qué retos implicaría para las mejoras de
+    nuestro sistema de transporte?
+  </ArticleParrafo>
 
-        <p class="text-[#040404] sm:text-[18px]">Nuestro transporte público se aglomera alrededor de mercados, universidades, o zonas de gran importancia
-            laboral. Por ejemplo hay estudios que estiman que por la zona del mercado La Ramada, en Santa Cruz de la
-            Sierra, <a
-                href="https://eldeber.com.bo/edicion-impresa/estudios-muestran-que-el-transporte-publico-en-la-capital-crucena-satura-el-trafico-y-opera-con-micr_324669">circulan
-                hasta 40 líneas de transporte público por la misma vía</a>. Lo mismo sucede en Cochabamba, pues
-            sobre la Avenida Ayacucho, donde se encuentra la terminal de buses, pasan al rededor de 50 líneas de
-            taxitrufis y minibuses.</p>
-        <img src="https://ciudatoslab.github.io/trafico-en-bolivia/img/terminal.jpg" class="fotos">
-        <p style="font-style: italic; text-align: center; color: #476589; font-size: 14px;">A la derecha: puntos de <a href="https://openjicareport.jica.go.jp/pdf/12302832_01.pdf">alto de tráfico vehicular en Santa Cruz</a>. A la izquierda, fotografías del tráfico en la Avenida Ayacucho, donde se encuentra la terminal de buses, en Cochabamba.</p>
-        <p class="text-[#040404] sm:text-[18px]">Pero el transporte público también se concentra en las vías que unen áreas importantes en las ciudades. En el caso de La Paz, por ejemplo, existen grandes embotellamientos en las avenidas que conectan las laderas y municipios que componen el área metropolitana. Así, dos zonas de atasco, por ejemplo, son la Plaza Isabel La Católica, que vincula Sopocachi con Miraflores; y la Avenida Pérez Velasco, que conecta la ciudad de La Paz con El Alto, vía Autopista.</p>
-        <p class="text-[#040404] sm:text-[18px]">Es así que las rutas de nuestro transporte público se caracterizan por ser contorsionadas en los extremos, para recoger gente de barrios periféricos, pero luego se concentran en los mismos lugares, ocasionando graves problemas de tráfico y pérdida de tiempo para los pasajeros y los propios transportistas, sobretodo en horas pico. Fernando Prado, planificador urbano cruceño con muchos años de experiencia, lo describe así:</p> 
-        <p class="cita">La gente está feliz porque prácticamente la recogen de su casa, pero no se da cuenta que este sistema le hace perder tiempo. Es un sistema muy ineficiente porque estas líneas van viboreando por los barrios, pasando por los mercados, y por las universidades; lo que significa una hora de viaje o una hora y media para llegar al centro.</p>
-        <p class="text-[#040404] sm:text-[18px]">Por nuestra parte, utilizando datos disponibles del transporte público en diferentes ciudades, elaboramos el siguiente mapa de calor, que muestra las zonas de mayor concentración de líneas del transporte público. Puedes usar los controles para explorarlo y revisar la ciudad que te interesa.</p>
-        <iframe src="https://ciudatoslab.github.io/trafico-en-bolivia/map/index.html" width="100%" height="700px"></iframe>
+  <ArticleSubtitle>
+    ¿Por qué nuestro transporte público recorre las mismas vías?
+  </ArticleSubtitle>
+  <ArticleParrafo>
+    En Bolivia, las rutas del transporte responden de manera directa a la
+    urbanización y creación de nuevos barrios. Los transportistas modifican sus
+    líneas y trayectos a medida que crece la ciudad y la consecuente demanda de
+    movilidad.
+  </ArticleParrafo>
+  <ArticleParrafo>
+    En este sentido, Juan Cabrera destaca, en <ArticleLink
+      link="https://www.scielo.br/j/urbe/a/cYZN7bskdGMnf7kZMCZvWVv/abstract/?lang=es"
+      >una reciente investigación</ArticleLink
+    >, que los transportistas modifican sus rutas a pedido de barrios en las
+    periferias; y es por esta razón que nuestro sistema de transporte es muy
+    accesible para la gente que vive en las zonas más alejadas.
+  </ArticleParrafo>
+  <ArticleParrafo>
+    Pero esto no es algo nuevo. Esta forma de trazar rutas se ha venido
+    configurando en todo el país desde hace más de 80 años. De hecho, las
+    primeras asociaciones y líneas de transporte urbano, que nacieron al rededor
+    de 1940, ya tenían el propósito de satisfacer la demanda de transporte que
+    iba creciendo en las periferias. Este es el caso de, por ejemplo, la línea
+    de micros 2, fundada en La Paz <ArticleLink
+      link="https://amun.bo/evolucion-de-la-linea-2-de-chaucheritas-a-colectivo-micro-y-jumbo/"
+      >en 1938</ArticleLink
+    >.
+  </ArticleParrafo>
+  <ArticleParrafo>
+    Además, Bianca de Marchi, una investigadora que trabajó la <a
+      href="https://www.academia.edu/103351065/Transportes_pasajeros_y_v%C3%ADas_Aproximaciones_a_la_historia_de_la_integraci%C3%B3n_boliviana"
+      >configuración histórica de nuestros sistemas de transporte</a
+    >, señala que la lógica de apropiarse de determinadas rutas para satisfacer
+    la demanda de comunidades alejadas, también se encuentra presente en muchos
+    sindicatos agrarios, que suelen tener “secretarios de transporte”.
+  </ArticleParrafo>
 
-        <h2 class="text-xl sm:text-[34px] font-bold  text-azul-ciudatos">¿Qué estuvieron haciendo los gobiernos municipales para solucionar el problema vehicular?</h2>
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <img
+      src="https://ciudatoslab.github.io/trafico-en-bolivia/img/bus-antiguo.jpg"
+      width="500px"
+    />
+  </div>
 
-        <p class="text-[#040404] sm:text-[18px]">Muchos han tratado de solucionar el tráfico con la construcción de pasos a desnivel, corredores, viaductos y ampliación de avenidas.</p>
+  <ArticleLeyenda>
+    Fotografía de un colectivo en mayo de 1968. Sacada del grupo <a
+      href="https://www.facebook.com/groups/LaPazFotosAntiguas/permalink/3163444110370435/"
+      >Fotos antiguas de La Paz</a
+    >.
+  </ArticleLeyenda>
+  <ArticleParrafo>
+    A ello se debe sumar que, para obtener la mayor cantidad de ganancias
+    posible, cada línea organiza sus recorridos para pasar por puntos nodales de
+    la ciudad, con tal de llevar y recoger la mayor cantidad de pasajeros. Como
+    resultado, los trayectos se superponen, concentran y desembocan en las
+    mismas calles y avenidas, generando caos vehicular.
+  </ArticleParrafo>
 
-        <p class="text-[#040404] sm:text-[18px]">Desde <a
-            href="https://eju.tv/2024/06/el-alto-paso-a-desnivel-extranca-senkata-con-avance-del-98-se-entrega-en-agosto/">El
-            Alto</a>, pasando por <a
-            href="https://elpais.bo/archivo-sociedad/20161006_231597-realizan-pruebas-de-carga-en-viaducto-del-campesino.html">Tarija</a>
-        y, también en <a
-            href="https://eju.tv/2021/10/santa-cruz-hay-zonas-caoticas-por-el-trafico-y-la-alcaldia-analiza-construir-pasos-a-desnivel/">Santa
-            Cruz</a>, muchos alcaldes, recientemente, han inaugurado y anunciado la construcción de
-        grandes infraestructuras vehiculares en zonas críticas, pero no hay muchas garantías de que esto
-        solucione el problema.</p>
+  <ArticleParrafo>
+    Nuestro transporte público se aglomera alrededor de mercados, universidades,
+    o zonas de gran importancia laboral. Por ejemplo hay estudios que estiman
+    que por la zona del mercado La Ramada, en Santa Cruz de la Sierra, <ArticleLink
+      link="https://eldeber.com.bo/edicion-impresa/estudios-muestran-que-el-transporte-publico-en-la-capital-crucena-satura-el-trafico-y-opera-con-micr_324669"
+      >circulan hasta 40 líneas de transporte público por la misma vía</ArticleLink
+    >. Lo mismo sucede en Cochabamba, pues sobre la Avenida Ayacucho, donde se
+    encuentra la terminal de buses, pasan al rededor de 50 líneas de taxitrufis
+    y minibuses.
+  </ArticleParrafo>
+  <img
+    src="https://ciudatoslab.github.io/trafico-en-bolivia/img/terminal.jpg"
+    class="fotos"
+  />
+  <ArticleLeyenda>
+    A la derecha: puntos de <ArticleLink
+      link="https://openjicareport.jica.go.jp/pdf/12302832_01.pdf"
+      >alto de tráfico vehicular en Santa Cruz</ArticleLink
+    >. A la izquierda, fotografías del tráfico en la Avenida Ayacucho, donde se
+    encuentra la terminal de buses, en Cochabamba.
+  </ArticleLeyenda>
+  <ArticleParrafo>
+    Pero el transporte público también se concentra en las vías que unen áreas
+    importantes en las ciudades. En el caso de La Paz, por ejemplo, existen
+    grandes embotellamientos en las avenidas que conectan las laderas y
+    municipios que componen el área metropolitana. Así, dos zonas de atasco, por
+    ejemplo, son la Plaza Isabel La Católica, que vincula Sopocachi con
+    Miraflores; y la Avenida Pérez Velasco, que conecta la ciudad de La Paz con
+    El Alto, vía Autopista.
+  </ArticleParrafo>
+  <ArticleParrafo>
+    Es así que las rutas de nuestro transporte público se caracterizan por ser
+    contorsionadas en los extremos, para recoger gente de barrios periféricos,
+    pero luego se concentran en los mismos lugares, ocasionando graves problemas
+    de tráfico y pérdida de tiempo para los pasajeros y los propios
+    transportistas, sobretodo en horas pico. Fernando Prado, planificador urbano
+    cruceño con muchos años de experiencia, lo describe así:
+  </ArticleParrafo>
+  <ArticleCita>
+    La gente está feliz porque prácticamente la recogen de su casa, pero no se
+    da cuenta que este sistema le hace perder tiempo. Es un sistema muy
+    ineficiente porque estas líneas van viboreando por los barrios, pasando por
+    los mercados, y por las universidades; lo que significa una hora de viaje o
+    una hora y media para llegar al centro.
+  </ArticleCita>
+  <ArticleParrafo>
+    Por nuestra parte, utilizando datos disponibles del transporte público en
+    diferentes ciudades, elaboramos el siguiente mapa de calor, que muestra las
+    zonas de mayor concentración de líneas del transporte público. Puedes usar
+    los controles para explorarlo y revisar la ciudad que te interesa.
+  </ArticleParrafo>
+  <iframe
+    src="https://ciudatoslab.github.io/trafico-en-bolivia/map/index.html"
+    width="100%"
+    height="700px"></iframe>
 
-        <p class="text-[#040404] sm:text-[18px]">Por ejemplo, Cochabamba es una de las ciudades que más pasos a desnivel, viaductos y ampliaciones
-            de avenidas ha construido en los últimos años. Aquí, una zona crítica para el tráfico y donde se hicieron enormes inversiones en
-            infraestructura vehicular es la Avenida 6 de agosto por donde, según nuestros cálculos, pasan 27
-            líneas de transporte público.
-        </p>
+  <ArticleSubtitle>
+    ¿Qué estuvieron haciendo los gobiernos municipales para solucionar el
+    problema vehicular?
+  </ArticleSubtitle>
 
-        <iframe src="https://flo.uri.sh/story/2519504/embed#slide-1" height="600px"></iframe>
-        <p style="font-style: italic; text-align: center; color: #476589; font-size: 14px;">La avenida 6 de agosto en Cochabamba</p>
-        <p class="text-[#040404] sm:text-[18px]">Pero estas obras no solamente terminaron en escándalos de corrupción <a
-            href="https://brujuladigital.net/politica/un-tribunal-absuelve-a-castellanos-del-caso-puente-caido-y-alcaldia-de-cochabamba-anuncia-apelacion">como
-            el famoso caso del puente caído</a>, sino que tampoco fueron capaces de solucionar los
-        embotellamientos.</p>
-        <p class="text-[#040404] sm:text-[18px]">La siguiente fotografía compara dos imágenes satelitales de la 6 de agosto: una antes y otra después de
-            la construcción de infraestructuras vehiculares. No sólo el tráfico no se ha arreglado, sino que parece haber empeorado. Este fenómeno es algo que
-            se ha estudiado bastante desde el urbanismo y las matemáticas del transporte.</p>
-        <iframe src="https://flo.uri.sh/story/2519504/embed#slide-3" height="800px"></iframe>
-        <p class="text-[#040404] sm:text-[18px]">Contrario a lo que se espera, en muchos casos, <a
-            href="https://ciudatoslab.org/modelos/paradoja-braess/">crear más espacio para el automóvil,
-            en lugar de alivianar el tráfico, fomenta a que más vehículos pasen por ahí y las vías se
-            sobrecarguen</a>. Es lo que en urbanismo se conoce como <a
-            href="https://www.urbanoides.net/2024/04/25/mas-carriles--mas-problemas-el-dilema-de-la-demanda-inducida">la
-            demanda inducida</a>.
-            <p class="text-[#040404] sm:text-[18px]">Otra solución que intentaron llevar adelante varios gobiernos municipales fue la restricción de
-                placas.
-            </p>
-            <p class="text-[#040404] sm:text-[18px]">Se delimita un área central y se cobran multas a los conductores que pasan por ahí los
-                        días que lo tienen prohibido. Esta solución es interesante pues ha sido muy <a
-                            href="https://youtu.be/YX68ym4n7_c?si=4eZ-o09BA8mfKafb">efectiva para descongestionar
-                            centros urbanos en ciudades tan grandes como Londres</a>. Sin embargo, la restricción vehicular y las multas no se aplican del todo para las asociaciones y
-                            líneas del transporte público, quienes resisten a las regulaciones.
-            </p>
-            <p class="text-[#040404] sm:text-[18px]">En Cochabamba, de entrada, la <a
-                href="https://es.scribd.com/document/574810469/ORDENANZA-MUNICIPAL-4394-2012-RESTRICCION-DE-PLACAS-corregido">ordenanza
-                municipal 4394/2012 exime al transporte público</a> de la restricción vehicular y las
-            multas. Y en Santa Cruz, el 2023 <a
-                href="https://eldeber.com.bo/edicion-impresa/estudios-muestran-que-el-transporte-publico-en-la-capital-crucena-satura-el-trafico-y-opera-con-micr_324669">se
-                intentó llevar adelante un proceso reordenamiento vehicular mediante la ley municipal
-                1216</a>, pero hubieron grandes protestas de los transportistas que terminaron <a
-                href="https://eldeber.com.bo/santa-cruz/concejales-derivan-a-comision-la-revision-de-la-ley-1216-sobre-movilidad-urbana_339161">dilantando
-                la reforma al tráfico</a>.
-        </p>
+  <ArticleParrafo>
+    Muchos han tratado de solucionar el tráfico con la construcción de pasos a
+    desnivel, corredores, viaductos y ampliación de avenidas.
+  </ArticleParrafo>
 
+  <ArticleParrafo>
+    Desde <ArticleLink
+      link="https://eju.tv/2024/06/el-alto-paso-a-desnivel-extranca-senkata-con-avance-del-98-se-entrega-en-agosto/"
+      >El Alto</ArticleLink
+    >, pasando por <ArticleLink
+      link="https://elpais.bo/archivo-sociedad/20161006_231597-realizan-pruebas-de-carga-en-viaducto-del-campesino.html"
+      >Tarija</ArticleLink
+    >
+    y, también en <ArticleLink
+      link="https://eju.tv/2021/10/santa-cruz-hay-zonas-caoticas-por-el-trafico-y-la-alcaldia-analiza-construir-pasos-a-desnivel/"
+      >Santa Cruz</ArticleLink
+    >, muchos alcaldes, recientemente, han inaugurado y anunciado la
+    construcción de grandes infraestructuras vehiculares en zonas críticas, pero
+    no hay muchas garantías de que esto solucione el problema.
+  </ArticleParrafo>
 
-        <h2 class="text-xl sm:text-[34px] font-bold  text-azul-ciudatos">El problema político</h2>
-            <p class="text-[#040404] sm:text-[18px]">Es bastante claro que, para mejorar el tráfico en Bolivia, se tiene que intervenir en el funcionamiento
-                de las asociaciones que proveen el servicio del transporte. ¿Pero, qué retos hay para lograrlo?</p>
-            <p class="text-[#040404] sm:text-[18px]">El primer y más grande obstáculo tiene que ver con el manejo político de la situación. Pues, el sector
-                del transporte tiene mucha fuerza social y política, que usa para evadir o crear normas, según la
-                conveniencia de su sector. Y los gobiernos municipales les hacen muchas concesiones, con tal de obtener
-                apoyo político a cambio.</p>
-            <p class="text-[#040404] sm:text-[18px]">La relación clientelista entre transportistas y alcaldías, es bastante crítica y obstaculiza las reformas
-                al tráfico. Fernando Prado nos contó cómo esto obstaculiza las reformas en Santa Cruz de la Sierra:</p>
-            <p class="cita">Todos los políticos le hacen la venia a los transportistas porque son muchos votos.
-                Imagínense que en Santa Cruz, por ejemplo, hay como 10.000 micros y, con los parientes y amigos que
-                trabajan ahí, ya son 50.000 personas. Es mucha gente, son muchos votos y mucho poder, que (los
-                transportistas) usan para paralizar la ciudad si hay reformas que no les gustan. Los transportistas que
-                apoyan al gobierno municipal se benefician de ese poder político. Entonces, ningún alcalde se anima a
-                poner un poco de orden o cambiar el sistema.</p>
-            <p class="text-[#040404] sm:text-[18px]"class="comentario" >De hecho, el transporte es un sector tan importante para la política municipal que, incluso, han tenido
-                alcaldes y concejales. En Cochabamba, de 2018 a 2020, por ejemplo, el alcalde fue <a
-                    href="https://www.lostiempos.com/actualidad/cochabamba/20181206/ivan-telleria-dirigente-del-autotransporte-alcalde-suplente">Iván
-                    Tellería, dirigente del transporte público y afiliado a la línea de micros H.</a> En La Paz, el
-                2023, se eligió a <a
-                    href="https://erbol.com.bo/gente/lucio-quispe-es-elegido-como-presidente-del-concejo-municipal-de-la-paz">Lucio
-                    Quispe, dirigente transportista,</a> como presidente del Concejo Municipal.</p>
-                    <img src="https://ciudatoslab.github.io/trafico-en-bolivia/img/autoridades.jpg" class="fotos">
-            <p style="font-style: italic; text-align: center; color: #476589; font-size: 14px;">Ex-alcalde Iván Tellería y Concejal Lucio Quispe</p>
-            <p class="text-[#040404] sm:text-[18px]">El pacto político entre gobiernos municipales y las asociaciones de transportistas no sólo obstaculiza la solución del tráfico; sino que también, ante la falta de regulaciones y fiscalización al sector, da pie a que los choferes trabajen en condiciones sumamente precarias y, en muchos casos, encubre el abuso por parte de sus dirigentes. Como nos indica Freddy Koch, el condicionamiento por parte de las dirigencias, sucede desde el momento en el que uno se afilia a un sindicato o cooperativa de transporte:</p>
-            <p class="cita">En el transporte público, los dirigentes viven de los transportistas y los transportistas viven de su trabajo. ¿Qué significa eso? Por ejemplo, para ganarse el derecho de pertenecer a uno de estos grupos y entrar a trabajar de chofer hay un monto que se paga. Y no estamos hablando de poca plata. En La Paz puede costar ente 5 y 10.000 dólares. En Cochabamba, entre 15.000 y 20.000 dólares. Para el dirigente, que administra ese dinero, basta que entren personas a trabajar, porque así ya están ganando. Pero el chofer no se beneficia directamente de estos montos, y para recuperar (su inversión), intenta “exprimir” su capacidad de negocio en el horario de trabajo que le asigna el sindicato. ¿Cómo lo hace? Adelantándose, engañando a otros minibuses, apurando a la gente, subiendo y bajando pasajeros donde pueda o haciendo trabajo sobre horas.</p>
-            <p class="text-[#040404] sm:text-[18px]">De este modo, no hay manera de saber cómo la dirigencia distribuye el dinero de los asociados. En una entrevista realizada por el diario Los Tiempos para <a href="https://www.lostiempos.com/especial-multimedia/20190610/negocio-del-transporte-publico-cochabamba">una investigación sobre el negocio del transporte público en Cochabamba</a>, un chofer declaró:</p>
-            <p class="cita">No se sabe a dónde va el dinero (que pagamos para entrar), muchos dirigentes se enriquecen pues con esos dineros, son pocos los beneficios para nosotros. Nunca rinden cuentas ni nada, nosotros los choferes no sabemos nada, al final solo nos dedicamos a trabajar mientras los dueños se enriquecen con nuestro trabajo y los dirigentes se vuelven millonarios con los aportes y los ingresos que entran en cada sindicato. Tienen que ver no más sus casas que parecen mansiones y sus vagonetas modernas. </p>
-            <p  class="text-[#040404] sm:text-[18px]"style="padding-bottom: 2em;">Mientras tanto, los choferes trabajan jornadas extenuantes y ganan a destajo. <a href="https://unhabitat.org/sites/default/files/2021/10/mus_unh-bolivia.pdf">Una investigación de ONU-Habitat Bolivia</a>, señala que la mayoría de los choferes no tienen seguros de salud, vacaciones u otras prestaciones sociales y están sometidos a jornadas laborales extensas, de hasta 12 horas diarias. </p>
+  <ArticleParrafo>
+    Por ejemplo, Cochabamba es una de las ciudades que más pasos a desnivel,
+    viaductos y ampliaciones de avenidas ha construido en los últimos años.
+    Aquí, una zona crítica para el tráfico y donde se hicieron enormes
+    inversiones en infraestructura vehicular es la Avenida 6 de agosto por
+    donde, según nuestros cálculos, pasan 27 líneas de transporte público.
+  </ArticleParrafo>
 
-        <h2 class="text-xl sm:text-[34px] font-bold  text-azul-ciudatos">Explorando soluciones</h2>
-            <p class="text-[#040404] sm:text-[18px]">El problema del tráfico en Bolivia es muy complejo. Estamos ante un sistema que resuelve las necesidades de transporte de los ciudadanos, pero de una manera muy ineficiente, dado que usa demasiados vehículos con muy poca capacidad, que desembocan en las mismas vías y ocasionan embotellamientos. ¿Cómo podemos cambiar este sistema? ¿Es posible?</p>
-            <p class="text-[#040404] sm:text-[18px]">Preguntamos a nuestros entrevistados cuáles podrían ser las soluciones para el tráfico en nuestras ciudades. Qué debería hacer la planificación urbana para intervenir en el problema.</p>
-            <p class="text-[#040404] sm:text-[18px]">Para Juan Cabrera, investigador urbano, no hay mucho que hacer. Nos indicó que, en su opinión, el sistema de transporte informal es “muy eficiente, en términos de accesibilidad y precio” y que, para él, “la planificación urbana es ficción”.</p>
-            <p class="text-[#040404] sm:text-[18px]">Fernando Prado, nos dio varias ideas. Como él indica, no se podrían hacer modificaciones enormes “de golpe”, dado que es un sistema de transporte que se ha consolidado a lo largo de muchos años, en los que justamente los gobiernos municipales abandonaron la cultura de planificación urbana y los transportistas ganaron mucho poder. Lo que se debe intentar es normar y negociar con el sector poco a poco, y que ellos mismos vean los beneficios que puede traer una reforma.</p>
-            <p class="text-[#040404] sm:text-[18px]">Prado indica que, en el contexto de la subida de precios y la crisis económica actual, el sector del transporte comenzará a pedir aumentos de tarifas del transporte; lo que <a href="https://eldeber.com.bo/edicion-impresa/antes-de-aumentar-las-tarifas-de-transporte_371533">permitirá abrir negociaciones con el sector</a>, para mejorar el servicio. Una de sus sugerencias fue modificar el trazado de líneas de los transportistas. Tratar de enrectar las partes contorsionadas y superpuestas de las rutas; de manera que pueda mejorarse el tiempo de viaje y se eviten las trancaderas, no sólo para los pasajeros, sino también para los propios choferes.</p>
-            <p class="text-[#040404] sm:text-[18px]">Nos indica que también se debería buscar la interoperabilidad y conexión entre líneas. Que se permita al ciudadano usar un sólo boleto para viajar entre líneas, que a su vez no pasen ni sobrecarguen las vías principales.</p>
-            <p class="text-[#040404] sm:text-[18px]">Por su parte, Freddy Koch nos indica que de lo que se trata es de brindarle más alternativas a la gente, ya sea promoviendo reformas en el actual sistema de transporte que tenemos, apoyándonos en la iniciativa privada o buscando modos de transporte público nuevos, como en La Paz lo fueron los Pumakataris y el Teleférico. En este sentido, Freddy nos dice que, a diferencia de otros países, Bolivia tiene mucho capital social para trabajar una reforma del transporte. Y es que, pese a la gran ineficiencia de nuestro actual sistema, la gente sigue utilizando y apuesta por el transporte público para moverse.</p>
-            <hr>
-            <br>
-            <p class="text-[#040404] sm:text-[18px]">En Bolivia, el problema del tráfico está íntimamente ligado a nuestro actual sistema de transporte público. Este, por la forma en la que se ha configurado, si bien es accesible y llega a muchos barrios, lo hace con rutas contorsionadas que hacen perder tiempo, usa demasiados automóviles con baja capacidad de transporte, y sus rutas se concentran en las mismas vías, creando embotellamientos frecuentes.</p>
-            <p class="text-[#040404] sm:text-[18px]">El sistema actual de transporte público no es eficiente, pero pese a ello, las alcaldías no son capaces de intervenir en el sector, que es un gran aliado político. Pero este criterio de gobierno clientelista necesita cambiar, pues el problema del tráfico urbano en las ciudades bolivianas está creciendo y empeorando. Hoy en día, se estima que el 80% de los bolivianos viven en ciudades, 45% de ellos en tres áreas metropolitanas. En la medida que no se encaren los retos políticos, no se planteen soluciones y no se recupere la planificación urbana, el tráfico sólo empeorará y nuestro sistema se volverá insostenible. A medida que se aproximan las elecciones de 2025, y con los próximos resultados del censo, es urgente encarar un debate y reformas al problema del tráfico y el transporte público, para mejorar la calidad de vida de los ciudadanos.</p>
+  <iframe src="https://flo.uri.sh/story/2519504/embed#slide-1" height="600px"
+  ></iframe>
+  <ArticleLeyenda> La avenida 6 de agosto en Cochabamba </ArticleLeyenda>
+  <ArticleParrafo>
+    Pero estas obras no solamente terminaron en escándalos de corrupción <ArticleLink
+      link="https://brujuladigital.net/politica/un-tribunal-absuelve-a-castellanos-del-caso-puente-caido-y-alcaldia-de-cochabamba-anuncia-apelacion"
+      >como el famoso caso del puente caído</ArticleLink
+    >, sino que tampoco fueron capaces de solucionar los embotellamientos.
+  </ArticleParrafo>
+  <ArticleParrafo>
+    La siguiente fotografía compara dos imágenes satelitales de la 6 de agosto:
+    una antes y otra después de la construcción de infraestructuras vehiculares.
+    No sólo el tráfico no se ha arreglado, sino que parece haber empeorado. Este
+    fenómeno es algo que se ha estudiado bastante desde el urbanismo y las
+    matemáticas del transporte.
+  </ArticleParrafo>
+  <iframe src="https://flo.uri.sh/story/2519504/embed#slide-3" height="800px"
+  ></iframe>
+  <ArticleParrafo>
+    Contrario a lo que se espera, en muchos casos, <ArticleLink
+      link="https://ciudatoslab.org/modelos/paradoja-braess/"
+      >crear más espacio para el automóvil, en lugar de alivianar el tráfico,
+      fomenta a que más vehículos pasen por ahí y las vías se sobrecarguen</ArticleLink
+    >. Es lo que en urbanismo se conoce como <ArticleLink
+      link="https://www.urbanoides.net/2024/04/25/mas-carriles--mas-problemas-el-dilema-de-la-demanda-inducida"
+      >la demanda inducida</ArticleLink
+    >.
+    <ArticleParrafo>
+      Otra solución que intentaron llevar adelante varios gobiernos municipales
+      fue la restricción de placas.
+    </ArticleParrafo>
+    <ArticleParrafo>
+      Se delimita un área central y se cobran multas a los conductores que pasan
+      por ahí los días que lo tienen prohibido. Esta solución es interesante
+      pues ha sido muy <ArticleLink
+        link="https://youtu.be/YX68ym4n7_c?si=4eZ-o09BA8mfKafb"
+        >efectiva para descongestionar centros urbanos en ciudades tan grandes
+        como Londres</ArticleLink
+      >. Sin embargo, la restricción vehicular y las multas no se aplican del
+      todo para las asociaciones y líneas del transporte público, quienes
+      resisten a las regulaciones.
+    </ArticleParrafo>
+    <ArticleParrafo>
+      En Cochabamba, de entrada, la <ArticleLink
+        link="https://es.scribd.com/document/574810469/ORDENANZA-MUNICIPAL-4394-2012-RESTRICCION-DE-PLACAS-corregido"
+        >ordenanza municipal 4394/2012 exime al transporte público</ArticleLink
+      > de la restricción vehicular y las multas. Y en Santa Cruz, el 2023 <ArticleLink
+        link="https://eldeber.com.bo/edicion-impresa/estudios-muestran-que-el-transporte-publico-en-la-capital-crucena-satura-el-trafico-y-opera-con-micr_324669"
+        >se intentó llevar adelante un proceso reordenamiento vehicular mediante
+        la ley municipal 1216</ArticleLink
+      >, pero hubieron grandes protestas de los transportistas que terminaron <ArticleLink
+        link="https://eldeber.com.bo/santa-cruz/concejales-derivan-a-comision-la-revision-de-la-ley-1216-sobre-movilidad-urbana_339161"
+        >dilantando la reforma al tráfico</ArticleLink
+      >.
+    </ArticleParrafo>
 
-            <h2 class="text-xl sm:text-[34px] font-bold  text-azul-ciudatos">Autoría</h2>
-            <p class="text-[#040404] sm:text-[18px]">Valeria Peredo (redacción y coordinación del proyecto)</p>
-            <p class="text-[#040404] sm:text-[18px]">Mayra Gutiérrez, Adhemar Conde, Mateo Zubieta, Alex Ojeda (Procesamientos SIG y mapas)</p>
-            <p class="text-[#040404] sm:text-[18px]">Leydi Quispe, Natalia Rocha, Tania Condori, Abigail Roque, Miguel Alvarez, Adrián Delgado (Recolección de
-                datos y notas periodísticas)</p>
-            <p></p>
-            <h2 class="text-xl sm:text-[34px] font-bold  text-azul-ciudatos">Entrevistados</h2>
-            <p class="text-[#040404] sm:text-[18px]">Freddy Koch, experto en movilidad urbana sostenible.</span></p>
-            <p class="text-[#040404] sm:text-[18px]">Fernando Prado, planificador urbano.</p>
-            <p class="text-[#040404] sm:text-[18px]">Juan Cabrera, investigador urbano.</p>
+    <ArticleSubtitle> El problema político </ArticleSubtitle>
+    <ArticleParrafo>
+      Es bastante claro que, para mejorar el tráfico en Bolivia, se tiene que
+      intervenir en el funcionamiento de las asociaciones que proveen el
+      servicio del transporte. ¿Pero, qué retos hay para lograrlo?
+    </ArticleParrafo>
+    <ArticleParrafo>
+      El primer y más grande obstáculo tiene que ver con el manejo político de
+      la situación. Pues, el sector del transporte tiene mucha fuerza social y
+      política, que usa para evadir o crear normas, según la conveniencia de su
+      sector. Y los gobiernos municipales les hacen muchas concesiones, con tal
+      de obtener apoyo político a cambio.
+    </ArticleParrafo>
+    <ArticleParrafo>
+      La relación clientelista entre transportistas y alcaldías, es bastante
+      crítica y obstaculiza las reformas al tráfico. Fernando Prado nos contó
+      cómo esto obstaculiza las reformas en Santa Cruz de la Sierra:
+    </ArticleParrafo>
+    <ArticleCita>
+      Todos los políticos le hacen la venia a los transportistas porque son
+      muchos votos. Imagínense que en Santa Cruz, por ejemplo, hay como 10.000
+      micros y, con los parientes y amigos que trabajan ahí, ya son 50.000
+      personas. Es mucha gente, son muchos votos y mucho poder, que (los
+      transportistas) usan para paralizar la ciudad si hay reformas que no les
+      gustan. Los transportistas que apoyan al gobierno municipal se benefician
+      de ese poder político. Entonces, ningún alcalde se anima a poner un poco
+      de orden o cambiar el sistema.
+    </ArticleCita>
+    <ArticleParrafo class="comentario">
+      De hecho, el transporte es un sector tan importante para la política
+      municipal que, incluso, han tenido alcaldes y concejales. En Cochabamba,
+      de 2018 a 2020, por ejemplo, el alcalde fue <ArticleLink
+        link="https://www.lostiempos.com/actualidad/cochabamba/20181206/ivan-telleria-dirigente-del-autotransporte-alcalde-suplente"
+        >Iván Tellería, dirigente del transporte público y afiliado a la línea
+        de micros H.</ArticleLink
+      > En La Paz, el 2023, se eligió a <ArticleLink
+        link="https://erbol.com.bo/gente/lucio-quispe-es-elegido-como-presidente-del-concejo-municipal-de-la-paz"
+        >Lucio Quispe, dirigente transportista,</ArticleLink
+      > como presidente del Concejo Municipal.
+    </ArticleParrafo>
+    <img
+      src="https://ciudatoslab.github.io/trafico-en-bolivia/img/autoridades.jpg"
+      class="fotos"
+    />
+    <ArticleLeyenda>
+      Ex-alcalde Iván Tellería y Concejal Lucio Quispe
+    </ArticleLeyenda>
+    <ArticleParrafo>
+      El pacto político entre gobiernos municipales y las asociaciones de
+      transportistas no sólo obstaculiza la solución del tráfico; sino que
+      también, ante la falta de regulaciones y fiscalización al sector, da pie a
+      que los choferes trabajen en condiciones sumamente precarias y, en muchos
+      casos, encubre el abuso por parte de sus dirigentes. Como nos indica
+      Freddy Koch, el condicionamiento por parte de las dirigencias, sucede
+      desde el momento en el que uno se afilia a un sindicato o cooperativa de
+      transporte:
+    </ArticleParrafo>
+    <ArticleCita>
+      En el transporte público, los dirigentes viven de los transportistas y los
+      transportistas viven de su trabajo. ¿Qué significa eso? Por ejemplo, para
+      ganarse el derecho de pertenecer a uno de estos grupos y entrar a trabajar
+      de chofer hay un monto que se paga. Y no estamos hablando de poca plata.
+      En La Paz puede costar ente 5 y 10.000 dólares. En Cochabamba, entre
+      15.000 y 20.000 dólares. Para el dirigente, que administra ese dinero,
+      basta que entren personas a trabajar, porque así ya están ganando. Pero el
+      chofer no se beneficia directamente de estos montos, y para recuperar (su
+      inversión), intenta “exprimir” su capacidad de negocio en el horario de
+      trabajo que le asigna el sindicato. ¿Cómo lo hace? Adelantándose,
+      engañando a otros minibuses, apurando a la gente, subiendo y bajando
+      pasajeros donde pueda o haciendo trabajo sobre horas.
+    </ArticleCita>
+    <ArticleParrafo>
+      De este modo, no hay manera de saber cómo la dirigencia distribuye el
+      dinero de los asociados. En una entrevista realizada por el diario Los
+      Tiempos para <ArticleLink
+        link="https://www.lostiempos.com/especial-multimedia/20190610/negocio-del-transporte-publico-cochabamba"
+        >una investigación sobre el negocio del transporte público en Cochabamba</ArticleLink
+      >, un chofer declaró:
+    </ArticleParrafo>
+    <ArticleCita>
+      No se sabe a dónde va el dinero (que pagamos para entrar), muchos
+      dirigentes se enriquecen pues con esos dineros, son pocos los beneficios
+      para nosotros. Nunca rinden cuentas ni nada, nosotros los choferes no
+      sabemos nada, al final solo nos dedicamos a trabajar mientras los dueños
+      se enriquecen con nuestro trabajo y los dirigentes se vuelven millonarios
+      con los aportes y los ingresos que entran en cada sindicato. Tienen que
+      ver no más sus casas que parecen mansiones y sus vagonetas modernas.
+    </ArticleCita>
+    <ArticleParrafo style="padding-bottom: 2em;">
+      Mientras tanto, los choferes trabajan jornadas extenuantes y ganan a
+      destajo. <ArticleLink
+        link="https://unhabitat.org/sites/default/files/2021/10/mus_unh-bolivia.pdf"
+        >Una investigación de ONU-Habitat Bolivia</ArticleLink
+      >, señala que la mayoría de los choferes no tienen seguros de salud,
+      vacaciones u otras prestaciones sociales y están sometidos a jornadas
+      laborales extensas, de hasta 12 horas diarias.
+    </ArticleParrafo>
 
-            <h2 class="text-xl sm:text-[34px] font-bold  text-azul-ciudatos">Edición</h2>
-            <p class="text-[#040404] sm:text-[18px]">Alex Ojeda</p>
-            <h2 class="text-xl sm:text-[34px] font-bold  text-azul-ciudatos">Descarga de datos</h2>
-            
-            <ul style="padding-left: 1em; text-align: left;">
-                <li class="text-[#040404] sm:text-[18px]"><a href="https://ciudatoslab.org/datos/transporte-publico-la-paz/">Rutas del transporte público en La Paz</a></li>
-                <li class="text-[#040404] sm:text-[18px]"><a href="https://ciudatoslab.org/datos/transporte-publico-cochabamba/">Rutas del transporte público en Cochabamba</a></li>
-                <li class="text-[#040404] sm:text-[18px]"><a href="https://ciudatoslab.org/datos/transporte-publico-santa-cruz/">Rutas del transporte público en Santa Cruz de la Sierra</a></li>
-            </ul>
-            
-            <p class="text-[#040404] sm:text-[18px]">Puedes ver el mapa de tráfico vehicular en pantalla completa, <a
-                    href="https://ciudatoslab.github.io/trafico-en-bolivia/map/">aquí</a></p>
-    </p>
+    <ArticleSubtitle> Explorando soluciones </ArticleSubtitle>
+    <ArticleParrafo>
+      El problema del tráfico en Bolivia es muy complejo. Estamos ante un
+      sistema que resuelve las necesidades de transporte de los ciudadanos, pero
+      de una manera muy ineficiente, dado que usa demasiados vehículos con muy
+      poca capacidad, que desembocan en las mismas vías y ocasionan
+      embotellamientos. ¿Cómo podemos cambiar este sistema? ¿Es posible?
+    </ArticleParrafo>
+    <ArticleParrafo>
+      Preguntamos a nuestros entrevistados cuáles podrían ser las soluciones
+      para el tráfico en nuestras ciudades. Qué debería hacer la planificación
+      urbana para intervenir en el problema.
+    </ArticleParrafo>
+    <ArticleParrafo>
+      Para Juan Cabrera, investigador urbano, no hay mucho que hacer. Nos indicó
+      que, en su opinión, el sistema de transporte informal es “muy eficiente,
+      en términos de accesibilidad y precio” y que, para él, “la planificación
+      urbana es ficción”.
+    </ArticleParrafo>
+    <ArticleParrafo>
+      Fernando Prado, nos dio varias ideas. Como él indica, no se podrían hacer
+      modificaciones enormes “de golpe”, dado que es un sistema de transporte
+      que se ha consolidado a lo largo de muchos años, en los que justamente los
+      gobiernos municipales abandonaron la cultura de planificación urbana y los
+      transportistas ganaron mucho poder. Lo que se debe intentar es normar y
+      negociar con el sector poco a poco, y que ellos mismos vean los beneficios
+      que puede traer una reforma.
+    </ArticleParrafo>
+    <ArticleParrafo>
+      Prado indica que, en el contexto de la subida de precios y la crisis
+      económica actual, el sector del transporte comenzará a pedir aumentos de
+      tarifas del transporte; lo que <ArticleLink
+        link="https://eldeber.com.bo/edicion-impresa/antes-de-aumentar-las-tarifas-de-transporte_371533"
+        >permitirá abrir negociaciones con el sector</ArticleLink
+      >, para mejorar el servicio. Una de sus sugerencias fue modificar el
+      trazado de líneas de los transportistas. Tratar de enrectar las partes
+      contorsionadas y superpuestas de las rutas; de manera que pueda mejorarse
+      el tiempo de viaje y se eviten las trancaderas, no sólo para los
+      pasajeros, sino también para los propios choferes.
+    </ArticleParrafo>
+    <ArticleParrafo>
+      Nos indica que también se debería buscar la interoperabilidad y conexión
+      entre líneas. Que se permita al ciudadano usar un sólo boleto para viajar
+      entre líneas, que a su vez no pasen ni sobrecarguen las vías principales.
+    </ArticleParrafo>
+    <ArticleParrafo>
+      Por su parte, Freddy Koch nos indica que de lo que se trata es de
+      brindarle más alternativas a la gente, ya sea promoviendo reformas en el
+      actual sistema de transporte que tenemos, apoyándonos en la iniciativa
+      privada o buscando modos de transporte público nuevos, como en La Paz lo
+      fueron los Pumakataris y el Teleférico. En este sentido, Freddy nos dice
+      que, a diferencia de otros países, Bolivia tiene mucho capital social para
+      trabajar una reforma del transporte. Y es que, pese a la gran ineficiencia
+      de nuestro actual sistema, la gente sigue utilizando y apuesta por el
+      transporte público para moverse.
+    </ArticleParrafo>
+    <hr />
+    <br />
+    <ArticleParrafo>
+      En Bolivia, el problema del tráfico está íntimamente ligado a nuestro
+      actual sistema de transporte público. Este, por la forma en la que se ha
+      configurado, si bien es accesible y llega a muchos barrios, lo hace con
+      rutas contorsionadas que hacen perder tiempo, usa demasiados automóviles
+      con baja capacidad de transporte, y sus rutas se concentran en las mismas
+      vías, creando embotellamientos frecuentes.
+    </ArticleParrafo>
+    <ArticleParrafo>
+      El sistema actual de transporte público no es eficiente, pero pese a ello,
+      las alcaldías no son capaces de intervenir en el sector, que es un gran
+      aliado político. Pero este criterio de gobierno clientelista necesita
+      cambiar, pues el problema del tráfico urbano en las ciudades bolivianas
+      está creciendo y empeorando. Hoy en día, se estima que el 80% de los
+      bolivianos viven en ciudades, 45% de ellos en tres áreas metropolitanas.
+      En la medida que no se encaren los retos políticos, no se planteen
+      soluciones y no se recupere la planificación urbana, el tráfico sólo
+      empeorará y nuestro sistema se volverá insostenible. A medida que se
+      aproximan las elecciones de 2025, y con los próximos resultados del censo,
+      es urgente encarar un debate y reformas al problema del tráfico y el
+      transporte público, para mejorar la calidad de vida de los ciudadanos.
+    </ArticleParrafo>
 
-</div>
-<style>
-    a {
-    color: #5480b6;
-    text-decoration: underline;
-    }
+    <ArticleSubtitle>Autoría</ArticleSubtitle>
+    <ArticleParrafo>
+      Valeria Peredo (redacción y coordinación del proyecto)
+    </ArticleParrafo>
+    <ArticleParrafo>
+      Mayra Gutiérrez, Adhemar Conde, Mateo Zubieta, Alex Ojeda (Procesamientos
+      SIG y mapas)
+    </ArticleParrafo>
+    <ArticleParrafo>
+      Leydi Quispe, Natalia Rocha, Tania Condori, Abigail Roque, Miguel Alvarez,
+      Adrián Delgado (Recolección de datos y notas periodísticas)
+    </ArticleParrafo>
+    <p></p>
+    <ArticleSubtitle> Entrevistados </ArticleSubtitle>
+    <ArticleParrafo>
+      Freddy Koch, experto en movilidad urbana sostenible.
+    </ArticleParrafo>
+  </ArticleParrafo>
+  <ArticleParrafo> Fernando Prado, planificador urbano. </ArticleParrafo>
+  <ArticleParrafo> Juan Cabrera, investigador urbano. </ArticleParrafo>
 
-    .cita {
-        text-align: center;
-        color: #5480b6;
-        font-style: italic;
-        font-size: 18px;
-    }
-</style>
-</Layout>
+  <ArticleSubtitle>Edición</ArticleSubtitle>
+  <ArticleParrafo>Alex Ojeda</ArticleParrafo>
+  <ArticleSubtitle> Descarga de datos </ArticleSubtitle>
+
+  <ul style="padding-left: 1em; text-align: left" class="list-disc list-inside">
+    <li class="text-[#040404] sm:text-[18px]">
+      <ArticleLink
+        link="https://ciudatoslab.org/datos/transporte-publico-la-paz/"
+        >Rutas del transporte público en La Paz</ArticleLink
+      >
+    </li>
+    <li class="text-[#040404] sm:text-[18px]">
+      <ArticleLink
+        link="https://ciudatoslab.org/datos/transporte-publico-cochabamba/"
+        >Rutas del transporte público en Cochabamba</ArticleLink
+      >
+    </li>
+    <li class="text-[#040404] sm:text-[18px]">
+      <ArticleLink
+        link="https://ciudatoslab.org/datos/transporte-publico-santa-cruz/"
+        >Rutas del transporte público en Santa Cruz de la Sierra</ArticleLink
+      >
+    </li>
+  </ul>
+
+  <ArticleParrafo>
+    Puedes ver el mapa de tráfico vehicular en pantalla completa, <ArticleLink
+      link="https://ciudatoslab.github.io/trafico-en-bolivia/map/"
+      >aquí</ArticleLink
+    >
+  </ArticleParrafo>
+</ArticleLayout>
