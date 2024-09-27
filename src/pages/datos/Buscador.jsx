@@ -40,6 +40,7 @@ const Buscador = () => {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = filteredResults.slice(indexOfFirstItem, indexOfLastItem);
+
   const paginate = (pageNumber) => {
     if (pageNumber == 1) {
       setCanBack(false);
@@ -49,6 +50,7 @@ const Buscador = () => {
     if (pageNumber == limitePaginas) setCanForward(false);
     setCurrentPage(pageNumber);
   };
+
   const nextPage = (pagina) => {
     if (pagina + 1 == limitePaginas) setCanForward(false);
     if (pagina + 1 > 1) setCanBack(true);
@@ -60,6 +62,7 @@ const Buscador = () => {
 
     setCurrentPage(currentPage + 1);
   };
+
   const previousPage = (pagina) => {
     if (pagina - 1 < limitePaginas) setCanForward(true);
     if (pagina - 1 == 1) setCanBack(false);
@@ -116,6 +119,11 @@ const Buscador = () => {
           </div>
         </div>
         <div className="flex flex-col items-center">
+          {/* Contador de tarjetas */}
+          <p className="text-gray-600 my-4">
+            {filteredResults.length} datasets disponibles
+          </p>
+
           {currentItems.map((user) => (
             <a
               href={`/datos/${user.slug}`}
@@ -145,6 +153,7 @@ const Buscador = () => {
               </div>
             </a>
           ))}
+
           {/* Paginador */}
           <div className="flex justify-center my-4">
             <button
