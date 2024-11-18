@@ -167,21 +167,39 @@ const Buscador = () => {
                 arrow_back
               </span>
             </button>
-            {Array.from({
-              length: limitePaginas,
-            }).map((_, index) => (
-              <button
-                key={index}
-                onClick={() => paginate(index + 1)}
-                className={`mx-1 px-3 py-1 border rounded max-[700px]:hidden  ${
-                  currentPage === index + 1
-                    ? "bg-blue-500 text-white"
-                    : "bg-gray-200 text-gray-700"
-                }   `}
-              >
-                {index + 1}
-              </button>
-            ))}
+            
+            {/* Mostrar números de página con puntos suspensivos */}
+            {Array.from({ length: limitePaginas }).map((_, index) => {
+              const pageNumber = index + 1;
+
+              // Condiciones para mostrar puntos suspensivos
+              if (
+                (pageNumber === 2 && currentPage > 3) || 
+                (pageNumber === limitePaginas - 1 && currentPage < limitePaginas - 2) ||
+                (pageNumber > 3 && pageNumber < limitePaginas - 2 && Math.abs(currentPage - pageNumber) > 1)
+              ) {
+                return (
+                  pageNumber === 2 || pageNumber === limitePaginas - 1 ? (
+                    <span key={index} className="mx-1 text-gray-700">...</span>
+                  ) : null
+                );
+              }
+
+              return (
+                <button
+                  key={index}
+                  onClick={() => paginate(pageNumber)}
+                  className={`mx-1 px-3 py-1 border rounded ${
+                    currentPage === pageNumber
+                      ? "bg-blue-500 text-white"
+                      : "bg-gray-200 text-gray-700"
+                  }`}
+                >
+                  {pageNumber}
+                </button>
+              );
+            })}
+
             <button
               key="next"
               onClick={() => nextPage(currentPage)}
