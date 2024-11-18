@@ -1,0 +1,8 @@
+---
+interface Props {
+  link: string;
+}
+const { link } = Astro.props;
+---
+
+<a href={link} class="text-azul-ciudatos underline"><slot /></a>
