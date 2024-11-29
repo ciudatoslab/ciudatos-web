@@ -155,7 +155,7 @@ const Buscador = () => {
           ))}
 
           {/* Paginador */}
-          <div className="flex justify-center my-4">
+          <div className="flex justify-center my-4 ml-2">
             <button
               key="previous"
               onClick={() => previousPage(currentPage)}
@@ -163,7 +163,7 @@ const Buscador = () => {
                 !canBack ? "hidden" : ""
               }`}
             >
-              <span className="material-symbols-outlined mt-2 ">
+              <span className="material-symbols-outlined">
                 arrow_back
               </span>
             </button>
@@ -176,7 +176,7 @@ const Buscador = () => {
               if (
                 (pageNumber === 2 && currentPage > 3) || 
                 (pageNumber === limitePaginas - 1 && currentPage < limitePaginas - 2) ||
-                (pageNumber > 3 && pageNumber < limitePaginas - 2 && Math.abs(currentPage - pageNumber) > 1)
+                (pageNumber > 3 && pageNumber < limitePaginas -1 && Math.abs(currentPage - pageNumber) > 1)
               ) {
                 return (
                   pageNumber === 2 || pageNumber === limitePaginas - 1 ? (
