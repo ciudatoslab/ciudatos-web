@@ -150,7 +150,7 @@ export const articles = [
     "imagen": "/img/tarjetas-articulos/braess.png",
     "url": "/modelos/paradoja-braess",
     "categoria": "Modelo",
-    "destacado": true
+    "destacado": false
   },
   {
     "id": "13",
@@ -180,6 +180,16 @@ export const articles = [
     "imagen": "/img/tarjetas-articulos/mapa-censo.jpg",
     "url": "https://ciudatoslab.github.io/mapa-censo/",
     "categoria": "Visualización",
+    "destacado": true
+  },
+   {
+    "id": "16",
+    "titulo": "Explorando las características de las estatuas en nuestras ciudades: mapa interactivo y tendencias",
+    "fecha": "16/05/2025",
+    "descripcion": "Las estatuas reflejan identidades y visiones, y moldean la memoria del espacio público. ¿Qué nos dicen sobre las identidades urbanas en Bolivia?",
+    "imagen": "/img/tarjetas-articulos/mapa-estatuas.jpg",
+    "url": "/historias/mapa-estatuas/",
+    "categoria": "Historia",
     "destacado": true
   }
 

@@ -1879,5 +1879,26 @@ export const datasets = [
     "csv": "",
     "excel": ""
   }
+  ,
+  {
+    "id": 162,
+    "nombre": "Estatuas en ciudades Bolivianas",
+    "año": 2025,
+    "autor": "Ciudatos Lab",
+    "descripcion": "Datos georreferenciados de estatuas en las ciudades de Cochabamba, Trinidad, Sucre, La Paz y El Alto.",
+    "tema": "Patrimonio",
+    "carpeta": "si",
+    "limpio": "si",
+    "slug": "estatuas-en-bolivia",
+    "url_drive": "https://drive.google.com/drive/folders/1UDgZhpAZCX-YnGHmuAnMMbkMKJ-MwUgt",
+    "url_github": "https://github.com/ciudatoslab/mapa-estatuas",
+    "sav": "",
+    "geojson": "si",
+    "shp": "",
+    "gpkg": "",
+    "img": "162.png",
+    "csv": "",
+    "excel": ""
+  }
 
 ]
