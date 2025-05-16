@@ -1885,7 +1885,7 @@ export const datasets = [
     "nombre": "Estatuas en ciudades Bolivianas",
     "año": 2025,
     "autor": "Ciudatos Lab",
-    "descripcion": "Datos georreferenciados de estatuas en las ciudades de Cochabamba, Trinidad, Sucre, La Paz y El Alto.",
+    "descripcion": "Datos georreferenciados de estatuas en las ciudades de Cochabamba, Trinidad, Sucre, La Paz y El Alto. Si deseas usar este recurso en otras investigaciones, no te olvides de citar a Ciudatos Lab.",
     "tema": "Patrimonio",
     "carpeta": "si",
     "limpio": "si",
