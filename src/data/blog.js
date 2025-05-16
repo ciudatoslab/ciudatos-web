@@ -184,7 +184,7 @@ export const articles = [
   },
    {
     "id": "16",
-    "titulo": "Explorando las características de las estatuas en nuestras ciudades: mapa interactivo y tendencias",
+    "titulo": "Explorando las estatuas de las ciudades bolivianas: mapa y tendencias",
     "fecha": "16/05/2025",
     "descripcion": "Las estatuas reflejan identidades y visiones, y moldean la memoria del espacio público. ¿Qué nos dicen sobre las identidades urbanas en Bolivia?",
     "imagen": "/img/tarjetas-articulos/mapa-estatuas.jpg",
