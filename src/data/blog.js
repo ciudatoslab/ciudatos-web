@@ -8,7 +8,7 @@ export const articles = [
     "imagen": "/img/tarjetas-articulos/desigualdad-thumbnail.png",
     "url": "https://ciudatoslab.github.io/urbanizacion-en-bolivia/",
     "categoria": "Historia",
-    "destacado": true
+    "destacado": false
   },
   {
     "id": "2",
@@ -29,7 +29,7 @@ export const articles = [
     "imagen": "/img/tarjetas-articulos/museos.png",
     "url": "/historias/mapa-museos-bol",
     "categoria": "Historia",
-    "destacado": true
+    "destacado": false
   },
 
   {
@@ -160,7 +160,7 @@ export const articles = [
     "imagen": "/img/tarjetas-articulos/velocidad-internet.png",
     "url": "https://ciudatoslab.github.io/mapa3d-velointernet/",
     "categoria": "Historia",
-    "destacado": true
+    "destacado": false
   },
   {
     "id": "14",
@@ -188,6 +188,16 @@ export const articles = [
     "fecha": "16/05/2025",
     "descripcion": "Las estatuas reflejan identidades y visiones, y moldean la memoria del espacio público. ¿Qué nos dicen sobre las identidades urbanas en Bolivia?",
     "imagen": "/img/tarjetas-articulos/mapa-estatuas.jpg",
+    "url": "/historias/mapa-estatuas/",
+    "categoria": "Historia",
+    "destacado": true
+  },
+     {
+    "id": "17",
+    "titulo": "¿Qué características tuvo la campaña electoral 2025 en el espacio urbano?",
+    "fecha": "14/05/2025",
+    "descripcion": "De mayo a agosto de 2025, mapeamos los actos de campaña en las ciudades Bolivianas. ¿Qué patrones y tendencias emergieron?",
+    "imagen": "/img/tarjetas-articulos/campana/thumbnail.jpg",
     "url": "/historias/mapa-estatuas/",
     "categoria": "Historia",
     "destacado": true
