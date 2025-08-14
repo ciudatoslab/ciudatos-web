@@ -198,7 +198,7 @@ export const articles = [
     "fecha": "14/05/2025",
     "descripcion": "De mayo a agosto de 2025, mapeamos los actos de campaña en las ciudades Bolivianas. ¿Qué patrones y tendencias emergieron?",
     "imagen": "/img/tarjetas-articulos/campana/thumbnail.jpg",
-    "url": "/historias/mapa-estatuas/",
+    "url": "/historias/mapa-campaña-2025/",
     "categoria": "Historia",
     "destacado": true
   }
