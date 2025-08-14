@@ -194,7 +194,7 @@ export const articles = [
   },
      {
     "id": "17",
-    "titulo": "¿Qué características tuvo la campaña electoral 2025 en el espacio urbano?",
+    "titulo": "¿Cómo se territorializó la campaña electoral de 2025 en el espacio urbano?",
     "fecha": "14/05/2025",
     "descripcion": "De mayo a agosto de 2025, mapeamos los actos de campaña en las ciudades Bolivianas. ¿Qué patrones y tendencias emergieron?",
     "imagen": "/img/tarjetas-articulos/campana/thumbnail.jpg",
