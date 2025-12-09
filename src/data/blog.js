@@ -201,6 +201,16 @@ export const articles = [
     "url": "/historias/mapa-campaña-2025/",
     "categoria": "Historia",
     "destacado": true
+  },
+       {
+    "id": "18",
+    "titulo": "Conociendo el campus: Un mapeo del la zona comercial de la UMSS",
+    "fecha": "10/12/2025",
+    "descripcion": "¿Alguna vez te has preguntado cómo el espacio alrededor de la UMSS moldea la vida estudiantil? Descubre en nuestro mapeo cómo esta importante zona comercial se adapta a cada necesidad de los universitarios, desde apuntes hasta diversión.",
+    "imagen": "/img/tarjetas-articulos/umss/thumbnail-umss.png",
+    "url": "/historias/mapa-umss/",
+    "categoria": "Historia",
+    "destacado": true
   }
 
 ]
