@@ -8,7 +8,7 @@ export const articles = [
     "imagen": "/img/tarjetas-articulos/desigualdad-thumbnail.png",
     "url": "https://ciudatoslab.github.io/urbanizacion-en-bolivia/",
     "categoria": "Historia",
-    "destacado": false
+    "destacado": true
   },
   {
     "id": "2",
