@@ -1,0 +1,75 @@
+---
+import Layout from "../../layouts/Layout.astro"
+
+const miembros = [
+  { nombre: "Alexandra Crespo",  archivo: "Alexandra Crespo.png" },
+  { nombre: "Claudia Rojas",     archivo: "Claudia Rojas.png" },
+  { nombre: "Darling Hurtado",   archivo: "Darling Hurtado.png" },
+  { nombre: "Denny Chura",       archivo: "Denny Chura.png" },
+  { nombre: "Diego Bustamante",  archivo: "Diego Bustamante.png" },
+  { nombre: "Erick Carrasco",    archivo: "Erick Carrasco.png" },
+  { nombre: "Jimena Villca",     archivo: "Jimena Villa.png" },
+  { nombre: "Jhoana Huanca",     archivo: "Jhoana Huanca.png" },
+  { nombre: "Pablo Gómez",       archivo: "Pablo Gomez.png" },
+  { nombre: "Silvana Cachi",     archivo: "Silvana Cachi.png" },
+  { nombre: "Silvia Vasquez",    archivo: "Silvia Vasquez.png" },
+  { nombre: "Teresa Mamani",     archivo: "Teresa Mamani.png" },
+  { nombre: "Thamy Montecinos",  archivo: "Thamy Montecinos.png" },
+  { nombre: "Xisel Canaviri",    archivo: "Xisel Canaviri.png" },
+]
+---
+
+<Layout title="Miembros de nuestro equipo">
+  <section class="flex flex-col gap-12 items-center py-8 px-4">
+    <h2 class="text-3xl sm:text-4xl text-azul-ciudatos text-center font-bold">
+      Miembros de nuestro equipo
+    </h2>
+
+    <!-- Coordinadora del proyecto -->
+    <div class="flex flex-col items-center gap-8 w-full max-w-4xl">
+      <h3 class="text-xl sm:text-2xl text-azul-ciudatos font-semibold text-center">
+        Coordinadora del proyecto
+      </h3>
+
+      <div class="flex flex-col items-center gap-3">
+        <div class="w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden border-4 border-verde-ciudatos shadow-md">
+          <img
+            src="/img/miembros/valeria-peredo.jpg"
+            alt="Valeria Peredo"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <p class="text-lg sm:text-xl font-bold text-texto text-center">
+          Valeria Peredo
+        </p>
+        <p class="text-sm sm:text-base font-semibold uppercase tracking-widest text-sub-texto text-center">
+          Antropóloga Urbana y Digital
+        </p>
+      </div>
+    </div>
+
+    <!-- Equipo -->
+    <div class="flex flex-col items-center gap-8 w-full max-w-4xl">
+      <h3 class="text-xl sm:text-2xl text-azul-ciudatos font-semibold text-center">
+        Pasantes y voluntarios
+      </h3>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-10 w-full">
+        {miembros.map((m) => (
+          <div class="flex flex-col items-center gap-3">
+            <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-verde-ciudatos shadow-md">
+              <img
+                src={`/img/miembros/${m.archivo}`}
+                alt={m.nombre}
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <p class="text-base sm:text-lg font-bold text-texto text-center">
+              {m.nombre}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
