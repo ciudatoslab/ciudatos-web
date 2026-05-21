@@ -202,13 +202,23 @@ export const articles = [
     "categoria": "Historia",
     "destacado": true
   },
-       {
+{
     "id": "18",
     "titulo": "Conociendo el campus: Un mapeo del la zona comercial de la UMSS",
     "fecha": "10/12/2025",
     "descripcion": "¿Alguna vez te has preguntado cómo el espacio alrededor de la UMSS moldea la vida estudiantil? Descubre en nuestro mapeo cómo esta importante zona comercial se adapta a cada necesidad de los universitarios, desde apuntes hasta diversión.",
     "imagen": "/img/tarjetas-articulos/umss/thumbnail-umss.png",
     "url": "/historias/mapa-umss/",
+    "categoria": "Historia",
+    "destacado": true
+  },
+{
+    "id": "19",
+    "titulo": "¿Hacia dónde se mueven los cochabambinos?",
+    "fecha": "24/04/2026",
+    "descripcion": "Trufi App es una aplicación de código abierto diseñada para conocer y planificar el uso de las rutas de transporte público en el área metropolitana de Cochabamba. En este artículo analizamos los datos de Trufi App para conocer los patrones de movilidad en la ciudad.",
+    "imagen": "/img/tarjetas-articulos/trufi-1.png",
+    "url": "https://labtecnosocial.org/movilidad-trufiapp2025/",
     "categoria": "Historia",
     "destacado": true
   }
