@@ -212,13 +212,23 @@ export const articles = [
     "categoria": "Historia",
     "destacado": true
   },
-{
+  {
     "id": "19",
     "titulo": "¿Hacia dónde se mueven los cochabambinos?",
     "fecha": "24/04/2026",
     "descripcion": "Trufi App es una aplicación de código abierto diseñada para conocer y planificar el uso de las rutas de transporte público en el área metropolitana de Cochabamba. En este artículo analizamos los datos de Trufi App para conocer los patrones de movilidad en la ciudad.",
     "imagen": "/img/tarjetas-articulos/trufi-1.png",
     "url": "https://labtecnosocial.org/movilidad-trufiapp2025/",
+    "categoria": "Historia",
+    "destacado": true
+  },
+  {
+    "id": "20",
+    "titulo": "¿Qué priorizaron los Concejos Municipales de La Paz, Cochabamba y Santa Cruz en la gestión pasada?",
+    "fecha": "27/05/2026",
+    "descripcion": "Analizamos y georreferenciamos más de 1.500 leyes aprobadas por los Concejos de los municipios capitales del eje central de Bolivia, entre 2021 y 2026.",
+    "imagen": "/img/tarjetas-articulos/concejos-municipales.png",
+    "url": "https://ciudatoslab.github.io/analisis-leyes-municipales/",
     "categoria": "Historia",
     "destacado": true
   }

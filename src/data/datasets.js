@@ -1899,6 +1899,28 @@ export const datasets = [
     "img": "162.png",
     "csv": "",
     "excel": ""
+  },
+    ,
+  {
+    "id": 163,
+    "nombre": "Leyes Municipales de Cochabamba, Santa Cruz y La Paz (2021-2026)",
+    "año": 2026,
+    "autor": "Ciudatos Lab",
+    "descripcion": "Base de datos en base a un scraping a las gacetas municipales de La Paz, Cochabamba y Santa Cruz. Contiene información de 1.527 leyes aprobadas y sancionadas entre enero de 2021 y marzo de 2026, incluyendo un etiquetado de sus temas, subtemas y ubicación geográfica.",
+    "tema": "Gestión Pública",
+    "carpeta": "si",
+    "limpio": "si",
+    "slug": "leyes-municipales-cochabamba-santa-cruz-la-paz",
+    "url_drive": "https://drive.google.com/drive/folders/1fRe_zSd8mKpxNrhw3HmsOaJmaqA4JkC9",
+    "url_github": "https://github.com/ciudatoslab/analisis-leyes-municipales/tree/master/data",
+    "sav": "",
+    "geojson": "si",
+    "shp": "",
+    "gpkg": "",
+    "img": "163.png",
+    "csv": "si",
+    "excel": ""
   }
+
 
 ]
