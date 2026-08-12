@@ -33,6 +33,13 @@ const { title, img, description } = Astro.props;
     <title>Ciudatos Lab | {title}</title>
     <meta property="og:image" content={img}>
     <meta name="description" content={description}>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FE26DCGJWC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FE26DCGJWC');
+    </script>
   </head>
   <body>
     <Header />
